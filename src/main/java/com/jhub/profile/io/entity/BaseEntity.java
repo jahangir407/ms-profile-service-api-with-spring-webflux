@@ -10,10 +10,6 @@ import org.springframework.data.annotation.Id;
 
 public abstract class BaseEntity {
 	
-	@Id
-	private UUID id;
-	private LocalDateTime createdAt; 
-	private LocalDateTime updatedAt;
-	private LocalDateTime deletedAt;
+	
 
 }
