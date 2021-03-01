@@ -42,25 +42,19 @@ public class UserRestController {
 
 	@PostMapping
 	Publisher<ResponseEntity<UserDto>> createUser(@RequestBody UserDto userDto) {
-		return this.userService
-						.createUser(userDto)
-						.map(res -> ResponseEntity.created(URI.create("/user/"+res.getId()))
-								.contentType(mediaType)
-								.build());
+		return this.userService.createUser(userDto)
+				.map(res -> ResponseEntity.created(URI.create("/user/" + res.getId())).contentType(mediaType).build());
 	}
-	
+
 	@PutMapping("/{id}")
-	Publisher<ResponseEntity<UserDto>> updateUserById(@PathVariable("id") String id, @RequestBody UserDto userDto){
+	Publisher<ResponseEntity<UserDto>> updateUserById(@PathVariable("id") String id, @RequestBody UserDto userDto) {
 		return this.userService.updateUserById(id, userDto)
-									.map(res -> ResponseEntity
-											.ok()
-											.contentType(mediaType)
-											.build());
-		
+				.map(res -> ResponseEntity.ok().contentType(mediaType).build());
+
 	}
-	
+
 	@DeleteMapping("/{id}")
-	Publisher<UserDto> deleteUserById(@PathVariable("id") String id){
+	Publisher<UserDto> deleteUserById(@PathVariable("id") String id) {
 		return this.userService.deleteUserById(id);
 	}
 

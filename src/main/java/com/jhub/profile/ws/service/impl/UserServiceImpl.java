@@ -46,27 +46,19 @@ public class UserServiceImpl implements UserService {
 	@Override
 	public Mono<UserDto> updateUserById(String id, UserDto userDto) {
 		userDto.setUpdatedAt(LocalDateTime.now());
-		return this.userRepository
-				.findById(id)
-				.map(u -> {
-					u.setFirstName(userDto.getFirstName());
-					u.setLastName(userDto.getLastName());
-					u.setEmail(userDto.getEmail());
-					u.setUpdatedAt(LocalDateTime.now());
-					return u;
-					})
-				.flatMap(this.userRepository::save)
-				.map(u-> userToUserDtoMapper.getDestination(u));
+		return this.userRepository.findById(id).map(u -> {
+			u.setFirstName(userDto.getFirstName());
+			u.setLastName(userDto.getLastName());
+			u.setEmail(userDto.getEmail());
+			u.setUpdatedAt(LocalDateTime.now());
+			return u;
+		}).flatMap(this.userRepository::save).map(u -> userToUserDtoMapper.getDestination(u));
 	}
 
 	@Override
 	public Mono<UserDto> deleteUserById(String id) {
-		return this.userRepository
-				.findById(id)
-				.flatMap(u-> this.userRepository
-										.deleteById(u.getId())
-										.thenReturn(u)
-										.map(r-> userToUserDtoMapper.getDestination(r)));
+		return this.userRepository.findById(id).flatMap(u -> this.userRepository.deleteById(u.getId()).thenReturn(u)
+				.map(r -> userToUserDtoMapper.getDestination(r)));
 	}
 
 	@Override
@@ -74,10 +66,9 @@ public class UserServiceImpl implements UserService {
 		userDto.setId(null);
 		userDto.setCreatedAt(LocalDateTime.now());
 		userDto.setUpdatedAt(LocalDateTime.now());
-		return this.userRepository
-				.save(userDtoToUserMapper.getDestination(userDto))
-				.doOnSuccess(u-> this.publisher.publishEvent(new UserCreatedEvent(u)))
-				.map(u-> userToUserDtoMapper.getDestination(u));
+		return this.userRepository.save(userDtoToUserMapper.getDestination(userDto))
+				.doOnSuccess(u -> this.publisher.publishEvent(new UserCreatedEvent(u)))
+				.map(u -> userToUserDtoMapper.getDestination(u));
 	}
 
 }
