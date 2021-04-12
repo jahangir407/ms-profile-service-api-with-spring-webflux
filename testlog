@@ -1,0 +1,774 @@
+2021-03-03 11:52:25.293  INFO 16913 --- [restartedMain] ofileServiceWithSpringWebfluxApplication : Starting ProfileServiceWithSpringWebfluxApplication using Java 15.0.1 on LS-194 with PID 16913 (/home/jahangir/spring_project/ms-profile-service-api/target/classes started by jahangir in /home/jahangir/spring_project/ms-profile-service-api)
+2021-03-03 11:52:25.294 DEBUG 16913 --- [restartedMain] ofileServiceWithSpringWebfluxApplication : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-03-03 11:52:25.295  INFO 16913 --- [restartedMain] ofileServiceWithSpringWebfluxApplication : No active profile set, falling back to default profiles: default
+2021-03-03 11:52:25.324  INFO 16913 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-03-03 11:52:25.324  INFO 16913 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-03-03 11:52:25.958  INFO 16913 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2021-03-03 11:52:26.045  INFO 16913 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 85 ms. Found 1 Reactive MongoDB repository interfaces.
+2021-03-03 11:52:26.537  INFO 16913 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-03-03 11:52:26.629  INFO 16913 --- [cluster-rtt-ClusterId{value='603ef9ea365418009963d116', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:6}] to localhost:27017
+2021-03-03 11:52:26.629  INFO 16913 --- [cluster-ClusterId{value='603ef9ea365418009963d116', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:7}] to localhost:27017
+2021-03-03 11:52:26.629  INFO 16913 --- [cluster-ClusterId{value='603ef9ea365418009963d116', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=35272056}
+2021-03-03 11:52:26.651  INFO 16913 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-03-03 11:52:26.763  INFO 16913 --- [restartedMain] org.reflections.Reflections              : Reflections took 3 ms to scan 1 urls, producing 0 keys and 0 values 
+2021-03-03 11:52:27.049  INFO 16913 --- [restartedMain] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8081
+2021-03-03 11:52:27.055  INFO 16913 --- [restartedMain] ofileServiceWithSpringWebfluxApplication : Started ProfileServiceWithSpringWebfluxApplication in 1.973 seconds (JVM running for 2.604)
+2021-03-03 11:52:44.858 DEBUG 16913 --- [reactor-http-epoll-3] c.j.p.ws.service.impl.UserServiceImpl    : ------User getAll() is accessed------
+2021-03-03 11:52:44.927  INFO 16913 --- [nioEventLoopGroup-3-3] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:8}] to localhost:27017
+2021-03-03 11:54:15.637  INFO 16913 --- [Thread-4] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:3, serverValue:8}] to localhost:27017 because the pool has been closed.
+2021-03-03 11:54:19.716  INFO 16913 --- [restartedMain] ofileServiceWithSpringWebfluxApplication : Starting ProfileServiceWithSpringWebfluxApplication using Java 15.0.1 on LS-194 with PID 16913 (/home/jahangir/spring_project/ms-profile-service-api/target/classes started by jahangir in /home/jahangir/spring_project/ms-profile-service-api)
+2021-03-03 11:54:19.716 DEBUG 16913 --- [restartedMain] ofileServiceWithSpringWebfluxApplication : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-03-03 11:54:19.716  INFO 16913 --- [restartedMain] ofileServiceWithSpringWebfluxApplication : No active profile set, falling back to default profiles: default
+2021-03-03 11:54:19.770  INFO 16913 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2021-03-03 11:54:19.773  INFO 16913 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 1 Reactive MongoDB repository interfaces.
+2021-03-03 11:54:19.794  INFO 16913 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-03-03 11:54:19.797  INFO 16913 --- [cluster-ClusterId{value='603efa5b365418009963d117', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:4, serverValue:10}] to localhost:27017
+2021-03-03 11:54:19.797  INFO 16913 --- [cluster-rtt-ClusterId{value='603efa5b365418009963d117', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:5, serverValue:9}] to localhost:27017
+2021-03-03 11:54:19.797  INFO 16913 --- [cluster-ClusterId{value='603efa5b365418009963d117', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=914115}
+2021-03-03 11:54:19.802  INFO 16913 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-03-03 11:54:19.866  INFO 16913 --- [restartedMain] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8081
+2021-03-03 11:54:19.868  INFO 16913 --- [restartedMain] ofileServiceWithSpringWebfluxApplication : Started ProfileServiceWithSpringWebfluxApplication in 0.164 seconds (JVM running for 115.417)
+2021-03-03 11:54:19.869  INFO 16913 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-03-03 11:54:32.352  INFO 16913 --- [restartedMain] ofileServiceWithSpringWebfluxApplication : Starting ProfileServiceWithSpringWebfluxApplication using Java 15.0.1 on LS-194 with PID 16913 (/home/jahangir/spring_project/ms-profile-service-api/target/classes started by jahangir in /home/jahangir/spring_project/ms-profile-service-api)
+2021-03-03 11:54:32.352 DEBUG 16913 --- [restartedMain] ofileServiceWithSpringWebfluxApplication : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-03-03 11:54:32.352  INFO 16913 --- [restartedMain] ofileServiceWithSpringWebfluxApplication : No active profile set, falling back to default profiles: default
+2021-03-03 11:54:32.401  INFO 16913 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2021-03-03 11:54:32.404  INFO 16913 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 1 Reactive MongoDB repository interfaces.
+2021-03-03 11:54:32.425  INFO 16913 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-03-03 11:54:32.428  INFO 16913 --- [cluster-ClusterId{value='603efa68365418009963d118', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:6, serverValue:12}] to localhost:27017
+2021-03-03 11:54:32.428  INFO 16913 --- [cluster-rtt-ClusterId{value='603efa68365418009963d118', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:7, serverValue:11}] to localhost:27017
+2021-03-03 11:54:32.428  INFO 16913 --- [cluster-ClusterId{value='603efa68365418009963d118', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=976307}
+2021-03-03 11:54:32.433  INFO 16913 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-03-03 11:54:32.438  WARN 16913 --- [restartedMain] onfigReactiveWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userServiceImpl' defined in file [/home/jahangir/spring_project/ms-profile-service-api/target/classes/com/jhub/profile/ws/service/impl/UserServiceImpl.class]: Bean instantiation via constructor failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.jhub.profile.ws.service.impl.UserServiceImpl]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	The method getId() is undefined for the type User
+
+2021-03-03 11:54:34.449  INFO 16913 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-03-03 11:54:34.494 ERROR 16913 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userServiceImpl' defined in file [/home/jahangir/spring_project/ms-profile-service-api/target/classes/com/jhub/profile/ws/service/impl/UserServiceImpl.class]: Bean instantiation via constructor failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.jhub.profile.ws.service.impl.UserServiceImpl]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	The method getId() is undefined for the type User
+
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:315) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:296) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1356) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1206) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:571) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:923) ~[spring-context-5.3.3.jar:5.3.3]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:588) ~[spring-context-5.3.3.jar:5.3.3]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:63) ~[spring-boot-2.4.2.jar:2.4.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767) ~[spring-boot-2.4.2.jar:2.4.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) ~[spring-boot-2.4.2.jar:2.4.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426) ~[spring-boot-2.4.2.jar:2.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326) ~[spring-boot-2.4.2.jar:2.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1311) ~[spring-boot-2.4.2.jar:2.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300) ~[spring-boot-2.4.2.jar:2.4.2]
+	at com.jhub.profile.ProfileServiceWithSpringWebfluxApplication.main(ProfileServiceWithSpringWebfluxApplication.java:12) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.4.2.jar:2.4.2]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.jhub.profile.ws.service.impl.UserServiceImpl]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	The method getId() is undefined for the type User
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:225) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:117) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:311) ~[spring-beans-5.3.3.jar:5.3.3]
+	... 25 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	The method getId() is undefined for the type User
+
+	at com.jhub.profile.ws.service.impl.UserServiceImpl.<init>(UserServiceImpl.java:60) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:212) ~[spring-beans-5.3.3.jar:5.3.3]
+	... 27 common frames omitted
+
+2021-03-03 11:55:21.003  INFO 16913 --- [restartedMain] ofileServiceWithSpringWebfluxApplication : Starting ProfileServiceWithSpringWebfluxApplication using Java 15.0.1 on LS-194 with PID 16913 (/home/jahangir/spring_project/ms-profile-service-api/target/classes started by jahangir in /home/jahangir/spring_project/ms-profile-service-api)
+2021-03-03 11:55:21.004 DEBUG 16913 --- [restartedMain] ofileServiceWithSpringWebfluxApplication : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-03-03 11:55:21.004  INFO 16913 --- [restartedMain] ofileServiceWithSpringWebfluxApplication : No active profile set, falling back to default profiles: default
+2021-03-03 11:55:21.054  INFO 16913 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2021-03-03 11:55:21.057  INFO 16913 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 1 Reactive MongoDB repository interfaces.
+2021-03-03 11:55:21.077  INFO 16913 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-03-03 11:55:21.079  INFO 16913 --- [cluster-rtt-ClusterId{value='603efa99365418009963d119', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:9, serverValue:13}] to localhost:27017
+2021-03-03 11:55:21.079  INFO 16913 --- [cluster-ClusterId{value='603efa99365418009963d119', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:8, serverValue:14}] to localhost:27017
+2021-03-03 11:55:21.079  INFO 16913 --- [cluster-ClusterId{value='603efa99365418009963d119', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=846231}
+2021-03-03 11:55:21.084  INFO 16913 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-03-03 11:55:21.088  WARN 16913 --- [restartedMain] onfigReactiveWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userServiceImpl' defined in file [/home/jahangir/spring_project/ms-profile-service-api/target/classes/com/jhub/profile/ws/service/impl/UserServiceImpl.class]: Bean instantiation via constructor failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.jhub.profile.ws.service.impl.UserServiceImpl]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	The method getId() is undefined for the type User
+
+2021-03-03 11:55:23.101  INFO 16913 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-03-03 11:55:23.102 ERROR 16913 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userServiceImpl' defined in file [/home/jahangir/spring_project/ms-profile-service-api/target/classes/com/jhub/profile/ws/service/impl/UserServiceImpl.class]: Bean instantiation via constructor failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.jhub.profile.ws.service.impl.UserServiceImpl]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	The method getId() is undefined for the type User
+
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:315) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:296) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1356) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1206) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:571) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:923) ~[spring-context-5.3.3.jar:5.3.3]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:588) ~[spring-context-5.3.3.jar:5.3.3]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:63) ~[spring-boot-2.4.2.jar:2.4.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767) ~[spring-boot-2.4.2.jar:2.4.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) ~[spring-boot-2.4.2.jar:2.4.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426) ~[spring-boot-2.4.2.jar:2.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326) ~[spring-boot-2.4.2.jar:2.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1311) ~[spring-boot-2.4.2.jar:2.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300) ~[spring-boot-2.4.2.jar:2.4.2]
+	at com.jhub.profile.ProfileServiceWithSpringWebfluxApplication.main(ProfileServiceWithSpringWebfluxApplication.java:12) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.4.2.jar:2.4.2]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.jhub.profile.ws.service.impl.UserServiceImpl]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problem: 
+	The method getId() is undefined for the type User
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:225) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:117) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:311) ~[spring-beans-5.3.3.jar:5.3.3]
+	... 25 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problem: 
+	The method getId() is undefined for the type User
+
+	at com.jhub.profile.ws.service.impl.UserServiceImpl.<init>(UserServiceImpl.java:60) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:212) ~[spring-beans-5.3.3.jar:5.3.3]
+	... 27 common frames omitted
+
+2021-03-03 11:56:03.621  INFO 16913 --- [restartedMain] ofileServiceWithSpringWebfluxApplication : Starting ProfileServiceWithSpringWebfluxApplication using Java 15.0.1 on LS-194 with PID 16913 (/home/jahangir/spring_project/ms-profile-service-api/target/classes started by jahangir in /home/jahangir/spring_project/ms-profile-service-api)
+2021-03-03 11:56:03.621 DEBUG 16913 --- [restartedMain] ofileServiceWithSpringWebfluxApplication : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-03-03 11:56:03.622  INFO 16913 --- [restartedMain] ofileServiceWithSpringWebfluxApplication : No active profile set, falling back to default profiles: default
+2021-03-03 11:56:03.676  INFO 16913 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2021-03-03 11:56:03.680  INFO 16913 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 1 Reactive MongoDB repository interfaces.
+2021-03-03 11:56:03.708  INFO 16913 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-03-03 11:56:03.710  INFO 16913 --- [cluster-rtt-ClusterId{value='603efac3365418009963d11a', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:11, serverValue:15}] to localhost:27017
+2021-03-03 11:56:03.710  INFO 16913 --- [cluster-ClusterId{value='603efac3365418009963d11a', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:10, serverValue:16}] to localhost:27017
+2021-03-03 11:56:03.710  INFO 16913 --- [cluster-ClusterId{value='603efac3365418009963d11a', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=873920}
+2021-03-03 11:56:03.715  INFO 16913 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-03-03 11:56:03.765  INFO 16913 --- [restartedMain] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8081
+2021-03-03 11:56:03.767  INFO 16913 --- [restartedMain] ofileServiceWithSpringWebfluxApplication : Started ProfileServiceWithSpringWebfluxApplication in 0.184 seconds (JVM running for 219.316)
+2021-03-03 11:56:03.768  INFO 16913 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-03-03 11:56:19.608 DEBUG 16913 --- [reactor-http-epoll-3] c.j.p.ws.service.impl.UserServiceImpl    : ------User getAll() is accessed------
+2021-03-03 11:56:19.611  INFO 16913 --- [nioEventLoopGroup-11-3] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:12, serverValue:17}] to localhost:27017
+2021-03-03 11:57:25.316  INFO 16913 --- [Thread-24] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:12, serverValue:17}] to localhost:27017 because the pool has been closed.
+2021-03-03 11:57:29.375  INFO 16913 --- [restartedMain] ofileServiceWithSpringWebfluxApplication : Starting ProfileServiceWithSpringWebfluxApplication using Java 15.0.1 on LS-194 with PID 16913 (/home/jahangir/spring_project/ms-profile-service-api/target/classes started by jahangir in /home/jahangir/spring_project/ms-profile-service-api)
+2021-03-03 11:57:29.375 DEBUG 16913 --- [restartedMain] ofileServiceWithSpringWebfluxApplication : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-03-03 11:57:29.375  INFO 16913 --- [restartedMain] ofileServiceWithSpringWebfluxApplication : No active profile set, falling back to default profiles: default
+2021-03-03 11:57:29.422  INFO 16913 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2021-03-03 11:57:29.427  INFO 16913 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 1 Reactive MongoDB repository interfaces.
+2021-03-03 11:57:29.448  INFO 16913 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-03-03 11:57:29.450  INFO 16913 --- [cluster-ClusterId{value='603efb19365418009963d11b', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:13, serverValue:19}] to localhost:27017
+2021-03-03 11:57:29.450  INFO 16913 --- [cluster-rtt-ClusterId{value='603efb19365418009963d11b', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:14, serverValue:18}] to localhost:27017
+2021-03-03 11:57:29.450  INFO 16913 --- [cluster-ClusterId{value='603efb19365418009963d11b', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=703711}
+2021-03-03 11:57:29.457  INFO 16913 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-03-03 11:57:29.505  INFO 16913 --- [restartedMain] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8081
+2021-03-03 11:57:29.507  INFO 16913 --- [restartedMain] ofileServiceWithSpringWebfluxApplication : Started ProfileServiceWithSpringWebfluxApplication in 0.144 seconds (JVM running for 305.056)
+2021-03-03 11:57:29.508  INFO 16913 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-03-03 11:57:51.986  INFO 16913 --- [restartedMain] ofileServiceWithSpringWebfluxApplication : Starting ProfileServiceWithSpringWebfluxApplication using Java 15.0.1 on LS-194 with PID 16913 (/home/jahangir/spring_project/ms-profile-service-api/target/classes started by jahangir in /home/jahangir/spring_project/ms-profile-service-api)
+2021-03-03 11:57:51.987 DEBUG 16913 --- [restartedMain] ofileServiceWithSpringWebfluxApplication : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-03-03 11:57:51.987  INFO 16913 --- [restartedMain] ofileServiceWithSpringWebfluxApplication : No active profile set, falling back to default profiles: default
+2021-03-03 11:57:52.031  INFO 16913 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2021-03-03 11:57:52.037  INFO 16913 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 1 Reactive MongoDB repository interfaces.
+2021-03-03 11:57:52.055  INFO 16913 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-03-03 11:57:52.057  INFO 16913 --- [cluster-rtt-ClusterId{value='603efb30365418009963d11c', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:16, serverValue:20}] to localhost:27017
+2021-03-03 11:57:52.057  INFO 16913 --- [cluster-ClusterId{value='603efb30365418009963d11c', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:15, serverValue:21}] to localhost:27017
+2021-03-03 11:57:52.057  INFO 16913 --- [cluster-ClusterId{value='603efb30365418009963d11c', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=861668}
+2021-03-03 11:57:52.061  INFO 16913 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-03-03 11:57:52.111  INFO 16913 --- [restartedMain] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8081
+2021-03-03 11:57:52.114  INFO 16913 --- [restartedMain] ofileServiceWithSpringWebfluxApplication : Started ProfileServiceWithSpringWebfluxApplication in 0.137 seconds (JVM running for 327.663)
+2021-03-03 11:57:52.115  INFO 16913 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-03-03 11:58:09.155 DEBUG 16913 --- [reactor-http-epoll-3] c.j.p.ws.service.impl.UserServiceImpl    : ------User getAll() is accessed------
+2021-03-03 11:58:09.161  INFO 16913 --- [nioEventLoopGroup-15-3] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:17, serverValue:22}] to localhost:27017
+2021-03-03 12:05:30.406  INFO 16913 --- [Thread-62] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:17, serverValue:22}] to localhost:27017 because the pool has been closed.
+2021-03-03 12:05:34.532  INFO 16913 --- [restartedMain] ofileServiceWithSpringWebfluxApplication : Starting ProfileServiceWithSpringWebfluxApplication using Java 15.0.1 on LS-194 with PID 16913 (/home/jahangir/spring_project/ms-profile-service-api/target/classes started by jahangir in /home/jahangir/spring_project/ms-profile-service-api)
+2021-03-03 12:05:34.532 DEBUG 16913 --- [restartedMain] ofileServiceWithSpringWebfluxApplication : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-03-03 12:05:34.533  INFO 16913 --- [restartedMain] ofileServiceWithSpringWebfluxApplication : No active profile set, falling back to default profiles: default
+2021-03-03 12:05:34.577  INFO 16913 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2021-03-03 12:05:34.579  INFO 16913 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 1 Reactive MongoDB repository interfaces.
+2021-03-03 12:05:34.599  INFO 16913 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-03-03 12:05:34.600  INFO 16913 --- [cluster-ClusterId{value='603efcfe365418009963d11d', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:18, serverValue:23}] to localhost:27017
+2021-03-03 12:05:34.601  INFO 16913 --- [cluster-rtt-ClusterId{value='603efcfe365418009963d11d', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:19, serverValue:24}] to localhost:27017
+2021-03-03 12:05:34.601  INFO 16913 --- [cluster-ClusterId{value='603efcfe365418009963d11d', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=657519}
+2021-03-03 12:05:34.605  INFO 16913 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-03-03 12:05:34.649  INFO 16913 --- [restartedMain] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8081
+2021-03-03 12:05:34.652  INFO 16913 --- [restartedMain] ofileServiceWithSpringWebfluxApplication : Started ProfileServiceWithSpringWebfluxApplication in 0.146 seconds (JVM running for 790.201)
+2021-03-03 12:05:34.653  INFO 16913 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-03-03 12:10:03.607  INFO 16913 --- [restartedMain] ofileServiceWithSpringWebfluxApplication : Starting ProfileServiceWithSpringWebfluxApplication using Java 15.0.1 on LS-194 with PID 16913 (/home/jahangir/spring_project/ms-profile-service-api/target/classes started by jahangir in /home/jahangir/spring_project/ms-profile-service-api)
+2021-03-03 12:10:03.607 DEBUG 16913 --- [restartedMain] ofileServiceWithSpringWebfluxApplication : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-03-03 12:10:03.607  INFO 16913 --- [restartedMain] ofileServiceWithSpringWebfluxApplication : No active profile set, falling back to default profiles: default
+2021-03-03 12:10:03.645  INFO 16913 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2021-03-03 12:10:03.647  INFO 16913 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 1 Reactive MongoDB repository interfaces.
+2021-03-03 12:10:03.667  INFO 16913 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-03-03 12:10:03.670  INFO 16913 --- [cluster-rtt-ClusterId{value='603efe0b365418009963d11e', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:21, serverValue:25}] to localhost:27017
+2021-03-03 12:10:03.670  INFO 16913 --- [cluster-ClusterId{value='603efe0b365418009963d11e', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:20, serverValue:26}] to localhost:27017
+2021-03-03 12:10:03.670  INFO 16913 --- [cluster-ClusterId{value='603efe0b365418009963d11e', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=687552}
+2021-03-03 12:10:03.676  INFO 16913 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-03-03 12:10:03.716  INFO 16913 --- [restartedMain] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8081
+2021-03-03 12:10:03.719  INFO 16913 --- [restartedMain] ofileServiceWithSpringWebfluxApplication : Started ProfileServiceWithSpringWebfluxApplication in 0.121 seconds (JVM running for 1059.268)
+2021-03-03 12:10:03.720  INFO 16913 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-03-03 12:10:58.266  INFO 16913 --- [restartedMain] ofileServiceWithSpringWebfluxApplication : Starting ProfileServiceWithSpringWebfluxApplication using Java 15.0.1 on LS-194 with PID 16913 (/home/jahangir/spring_project/ms-profile-service-api/target/classes started by jahangir in /home/jahangir/spring_project/ms-profile-service-api)
+2021-03-03 12:10:58.266 DEBUG 16913 --- [restartedMain] ofileServiceWithSpringWebfluxApplication : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-03-03 12:10:58.266  INFO 16913 --- [restartedMain] ofileServiceWithSpringWebfluxApplication : No active profile set, falling back to default profiles: default
+2021-03-03 12:10:58.308  INFO 16913 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2021-03-03 12:10:58.314  INFO 16913 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 1 Reactive MongoDB repository interfaces.
+2021-03-03 12:10:58.330  INFO 16913 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-03-03 12:10:58.332  INFO 16913 --- [cluster-rtt-ClusterId{value='603efe42365418009963d11f', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:23, serverValue:28}] to localhost:27017
+2021-03-03 12:10:58.332  INFO 16913 --- [cluster-ClusterId{value='603efe42365418009963d11f', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:22, serverValue:27}] to localhost:27017
+2021-03-03 12:10:58.332  INFO 16913 --- [cluster-ClusterId{value='603efe42365418009963d11f', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=850007}
+2021-03-03 12:10:58.336  INFO 16913 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-03-03 12:10:58.377  INFO 16913 --- [restartedMain] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8081
+2021-03-03 12:10:58.379  INFO 16913 --- [restartedMain] ofileServiceWithSpringWebfluxApplication : Started ProfileServiceWithSpringWebfluxApplication in 0.122 seconds (JVM running for 1113.928)
+2021-03-03 12:10:58.380  INFO 16913 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-03-03 12:25:50.649  INFO 16913 --- [restartedMain] ofileServiceWithSpringWebfluxApplication : Starting ProfileServiceWithSpringWebfluxApplication using Java 15.0.1 on LS-194 with PID 16913 (/home/jahangir/spring_project/ms-profile-service-api/target/classes started by jahangir in /home/jahangir/spring_project/ms-profile-service-api)
+2021-03-03 12:25:50.650 DEBUG 16913 --- [restartedMain] ofileServiceWithSpringWebfluxApplication : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-03-03 12:25:50.650  INFO 16913 --- [restartedMain] ofileServiceWithSpringWebfluxApplication : No active profile set, falling back to default profiles: default
+2021-03-03 12:25:50.689  INFO 16913 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2021-03-03 12:25:50.692  INFO 16913 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 1 Reactive MongoDB repository interfaces.
+2021-03-03 12:25:50.714  INFO 16913 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-03-03 12:25:50.716  INFO 16913 --- [cluster-rtt-ClusterId{value='603f01be365418009963d120', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:25, serverValue:30}] to localhost:27017
+2021-03-03 12:25:50.716  INFO 16913 --- [cluster-ClusterId{value='603f01be365418009963d120', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:24, serverValue:29}] to localhost:27017
+2021-03-03 12:25:50.716  INFO 16913 --- [cluster-ClusterId{value='603f01be365418009963d120', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=649371}
+2021-03-03 12:25:50.723  INFO 16913 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-03-03 12:25:50.768  INFO 16913 --- [restartedMain] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8081
+2021-03-03 12:25:50.771  INFO 16913 --- [restartedMain] ofileServiceWithSpringWebfluxApplication : Started ProfileServiceWithSpringWebfluxApplication in 0.132 seconds (JVM running for 2006.32)
+2021-03-03 12:25:50.771  INFO 16913 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-03-03 12:26:10.290  INFO 16913 --- [restartedMain] ofileServiceWithSpringWebfluxApplication : Starting ProfileServiceWithSpringWebfluxApplication using Java 15.0.1 on LS-194 with PID 16913 (/home/jahangir/spring_project/ms-profile-service-api/target/classes started by jahangir in /home/jahangir/spring_project/ms-profile-service-api)
+2021-03-03 12:26:10.290 DEBUG 16913 --- [restartedMain] ofileServiceWithSpringWebfluxApplication : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-03-03 12:26:10.290  INFO 16913 --- [restartedMain] ofileServiceWithSpringWebfluxApplication : No active profile set, falling back to default profiles: default
+2021-03-03 12:26:10.338  INFO 16913 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2021-03-03 12:26:10.341  INFO 16913 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 1 Reactive MongoDB repository interfaces.
+2021-03-03 12:26:10.359  INFO 16913 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-03-03 12:26:10.360  INFO 16913 --- [cluster-ClusterId{value='603f01d2365418009963d121', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:26, serverValue:31}] to localhost:27017
+2021-03-03 12:26:10.360  INFO 16913 --- [cluster-rtt-ClusterId{value='603f01d2365418009963d121', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:27, serverValue:32}] to localhost:27017
+2021-03-03 12:26:10.360  INFO 16913 --- [cluster-ClusterId{value='603f01d2365418009963d121', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=550583}
+2021-03-03 12:26:10.365  INFO 16913 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-03-03 12:26:10.408  INFO 16913 --- [restartedMain] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8081
+2021-03-03 12:26:10.410  INFO 16913 --- [restartedMain] ofileServiceWithSpringWebfluxApplication : Started ProfileServiceWithSpringWebfluxApplication in 0.134 seconds (JVM running for 2025.959)
+2021-03-03 12:26:10.411  INFO 16913 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-03-03 12:32:28.244  INFO 30734 --- [main] c.jhub.profile.service.UserServiceTest   : Starting UserServiceTest using Java 15.0.1 on LS-194 with PID 30734 (started by jahangir in /home/jahangir/spring_project/ms-profile-service-api)
+2021-03-03 12:32:28.244 DEBUG 30734 --- [main] c.jhub.profile.service.UserServiceTest   : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-03-03 12:32:28.246  INFO 30734 --- [main] c.jhub.profile.service.UserServiceTest   : No active profile set, falling back to default profiles: default
+2021-03-03 12:32:28.417  INFO 30734 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2021-03-03 12:32:28.485  INFO 30734 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65 ms. Found 1 Reactive MongoDB repository interfaces.
+2021-03-03 12:32:29.055  INFO 30734 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : note: noprealloc may hurt performance in many applications
+2021-03-03 12:32:29.057  INFO 30734 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:32:29.057+0900 I CONTROL  [initandlisten] MongoDB starting : pid=30820 port=39467 dbpath=/tmp/embedmongo-db-7cd64145-5e0a-4d98-a6c3-bcb22732941f 64-bit host=LS-194
+2021-03-03 12:32:29.057  INFO 30734 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:32:29.057+0900 I CONTROL  [initandlisten] db version v3.5.5
+2021-03-03 12:32:29.057  INFO 30734 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:32:29.057+0900 I CONTROL  [initandlisten] git version: 98515c812b6fa893613f063dae568ff8319cbfbd
+2021-03-03 12:32:29.058  INFO 30734 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:32:29.057+0900 I CONTROL  [initandlisten] allocator: tcmalloc
+2021-03-03 12:32:29.058  INFO 30734 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:32:29.057+0900 I CONTROL  [initandlisten] modules: none
+2021-03-03 12:32:29.058  INFO 30734 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:32:29.057+0900 I CONTROL  [initandlisten] build environment:
+2021-03-03 12:32:29.058  INFO 30734 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:32:29.057+0900 I CONTROL  [initandlisten]     distarch: x86_64
+2021-03-03 12:32:29.058  INFO 30734 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:32:29.057+0900 I CONTROL  [initandlisten]     target_arch: x86_64
+2021-03-03 12:32:29.058  INFO 30734 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:32:29.057+0900 I CONTROL  [initandlisten] options: { net: { bindIp: "127.0.0.1", http: { enabled: false }, port: 39467 }, security: { authorization: "disabled" }, storage: { dbPath: "/tmp/embedmongo-db-7cd64145-5e0a-4d98-a6c3-bcb22732941f", journal: { enabled: false }, mmapv1: { preallocDataFiles: false, smallFiles: true }, syncPeriodSecs: 0.0 } }
+2021-03-03 12:32:29.060  INFO 30734 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:32:29.060+0900 I STORAGE  [initandlisten] 
+2021-03-03 12:32:29.060  INFO 30734 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:32:29.060+0900 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2021-03-03 12:32:29.060  INFO 30734 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:32:29.060+0900 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+2021-03-03 12:32:29.060  INFO 30734 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:32:29.060+0900 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=7391M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=0,log_size=2GB),statistics_log=(wait=0),verbose=(recovery_progress),,log=(enabled=false),
+2021-03-03 12:32:29.155  INFO 30734 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:32:29.155+0900 W STORAGE  [initandlisten] Detected configuration for non-active storage engine mmapv1 when current storage engine is wiredTiger
+2021-03-03 12:32:29.155  INFO 30734 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:32:29.155+0900 I CONTROL  [initandlisten] 
+2021-03-03 12:32:29.155  INFO 30734 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:32:29.155+0900 I CONTROL  [initandlisten] ** NOTE: This is a development version (3.5.5) of MongoDB.
+2021-03-03 12:32:29.155  INFO 30734 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:32:29.155+0900 I CONTROL  [initandlisten] **       Not recommended for production.
+2021-03-03 12:32:29.155  INFO 30734 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:32:29.155+0900 I CONTROL  [initandlisten] 
+2021-03-03 12:32:29.155  INFO 30734 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:32:29.155+0900 I CONTROL  [initandlisten] 
+2021-03-03 12:32:29.155  INFO 30734 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:32:29.155+0900 I CONTROL  [initandlisten] ** WARNING: soft rlimits too low. rlimits set to 63035 processes, 1048576 files. Number of processes should be at least 524288 : 0.5 times number of files.
+2021-03-03 12:32:29.192  INFO 30734 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:32:29.192+0900 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/tmp/embedmongo-db-7cd64145-5e0a-4d98-a6c3-bcb22732941f/diagnostic.data'
+2021-03-03 12:32:29.253  INFO 30734 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:32:29.253+0900 I INDEX    [initandlisten] build index on: admin.system.version properties: { v: 2, key: { version: 1 }, name: "incompatible_with_version_32", ns: "admin.system.version" }
+2021-03-03 12:32:29.253  INFO 30734 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:32:29.253+0900 I INDEX    [initandlisten] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2021-03-03 12:32:29.254  INFO 30734 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:32:29.254+0900 I INDEX    [initandlisten] build index done.  scanned 0 total records. 0 secs
+2021-03-03 12:32:29.254  INFO 30734 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:32:29.254+0900 I COMMAND  [initandlisten] setting featureCompatibilityVersion to 3.4
+2021-03-03 12:32:29.254  INFO 30734 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:32:29.254+0900 I NETWORK  [thread1] waiting for connections on port 39467
+2021-03-03 12:32:29.255  INFO 30734 --- [main] d.f.embed.mongo.MongodExecutable         : start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@2f5b8250
+2021-03-03 12:32:29.366  INFO 30734 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:39467], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-03-03 12:32:29.405  INFO 30734 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:32:29.405+0900 I NETWORK  [thread1] connection accepted from 127.0.0.1:50414 #1 (1 connection now open)
+2021-03-03 12:32:29.405  INFO 30734 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:32:29.405+0900 I NETWORK  [thread1] connection accepted from 127.0.0.1:50416 #2 (2 connections now open)
+2021-03-03 12:32:29.432  INFO 30734 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:32:29.432+0900 I NETWORK  [conn1] received client metadata from 127.0.0.1:50414 conn1: { driver: { name: "mongo-java-driver|reactive-streams|spring-boot", version: "4.1.1" }, os: { type: "Linux", name: "Linux", architecture: "amd64", version: "5.4.0-66-generic" }, platform: "Java/Oracle Corporation/15.0.1+9-18" }
+2021-03-03 12:32:29.433  INFO 30734 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:32:29.432+0900 I NETWORK  [conn2] received client metadata from 127.0.0.1:50416 conn2: { driver: { name: "mongo-java-driver|reactive-streams|spring-boot", version: "4.1.1" }, os: { type: "Linux", name: "Linux", architecture: "amd64", version: "5.4.0-66-generic" }, platform: "Java/Oracle Corporation/15.0.1+9-18" }
+2021-03-03 12:32:29.451  INFO 30734 --- [cluster-ClusterId{value='603f034dadd3a84be87c1abb', description='null'}-localhost:39467] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:1}] to localhost:39467
+2021-03-03 12:32:29.451  INFO 30734 --- [cluster-rtt-ClusterId{value='603f034dadd3a84be87c1abb', description='null'}-localhost:39467] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:2}] to localhost:39467
+2021-03-03 12:32:29.452  INFO 30734 --- [cluster-ClusterId{value='603f034dadd3a84be87c1abb', description='null'}-localhost:39467] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:39467, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=5, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=null, roundTripTimeNanos=42469277}
+2021-03-03 12:32:29.581  WARN 30734 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+2021-03-03 12:32:29.675  INFO 30734 --- [main] c.jhub.profile.service.UserServiceTest   : Started UserServiceTest in 1.651 seconds (JVM running for 2.359)
+2021-03-03 12:32:30.138  INFO 30734 --- [main] c.jhub.profile.service.UserServiceTest   : -----Test 3: delete()------
+2021-03-03 12:32:30.206  INFO 30734 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:32:30.206+0900 I NETWORK  [thread1] connection accepted from 127.0.0.1:50420 #3 (3 connections now open)
+2021-03-03 12:32:30.212  INFO 30734 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:32:30.212+0900 I NETWORK  [conn3] received client metadata from 127.0.0.1:50420 conn3: { driver: { name: "mongo-java-driver|reactive-streams|spring-boot", version: "4.1.1" }, os: { type: "Linux", name: "Linux", architecture: "amd64", version: "5.4.0-66-generic" }, platform: "Java/Oracle Corporation/15.0.1+9-18" }
+2021-03-03 12:32:30.214  INFO 30734 --- [nioEventLoopGroup-2-3] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:3}] to localhost:39467
+2021-03-03 12:32:30.311  INFO 30734 --- [main] c.jhub.profile.service.UserServiceTest   : -----Test 4: update()------
+2021-03-03 12:32:30.343  INFO 30734 --- [main] c.jhub.profile.service.UserServiceTest   : -----Test 5: getById()------
+2021-03-03 12:32:30.347  INFO 30734 --- [main] c.jhub.profile.service.UserServiceTest   : -----Test 2: save()------
+2021-03-03 12:32:30.352  INFO 30734 --- [main] c.jhub.profile.service.UserServiceTest   : -----Test 1: getAll()------
+2021-03-03 12:32:30.355 DEBUG 30734 --- [main] c.j.p.ws.service.impl.UserServiceImpl    : ------User getAll() is accessed------
+2021-03-03 12:32:30.356  INFO 30734 --- [main] c.jhub.profile.service.UserServiceTest   : -------invoking StepVerifier------------------
+2021-03-03 12:32:30.358  INFO 30734 --- [main] ---userRepository.saveAll()----          : onSubscribe(FluxUsingWhen.UsingWhenConditionalSubscriber)
+2021-03-03 12:32:30.359  INFO 30734 --- [main] ---userRepository.saveAll()----          : request(unbounded)
+2021-03-03 12:32:30.361  INFO 30734 --- [nioEventLoopGroup-2-3] ---userRepository.saveAll()----          : onNext(com.jhub.profile.io.entity.User@504cc446)
+2021-03-03 12:32:30.361  INFO 30734 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:32:30.361+0900 I NETWORK  [thread1] connection accepted from 127.0.0.1:50422 #4 (4 connections now open)
+2021-03-03 12:32:30.361  INFO 30734 --- [nioEventLoopGroup-2-3] c.jhub.profile.service.UserServiceTest   : req.x----com.jhub.profile.io.entity.User@504cc446
+2021-03-03 12:32:30.363  INFO 30734 --- [nioEventLoopGroup-2-3] ---userRepository.saveAll()----          : onNext(com.jhub.profile.io.entity.User@582a49b8)
+2021-03-03 12:32:30.363  INFO 30734 --- [nioEventLoopGroup-2-3] c.jhub.profile.service.UserServiceTest   : req.x----com.jhub.profile.io.entity.User@582a49b8
+2021-03-03 12:32:30.367  INFO 30734 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:32:30.367+0900 I NETWORK  [conn4] received client metadata from 127.0.0.1:50422 conn4: { driver: { name: "mongo-java-driver|reactive-streams|spring-boot", version: "4.1.1" }, os: { type: "Linux", name: "Linux", architecture: "amd64", version: "5.4.0-66-generic" }, platform: "Java/Oracle Corporation/15.0.1+9-18" }
+2021-03-03 12:32:30.368  INFO 30734 --- [nioEventLoopGroup-2-4] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:4, serverValue:4}] to localhost:39467
+2021-03-03 12:32:30.369  INFO 30734 --- [nioEventLoopGroup-2-4] ---userRepository.saveAll()----          : onNext(com.jhub.profile.io.entity.User@62bc3ea0)
+2021-03-03 12:32:30.369  INFO 30734 --- [nioEventLoopGroup-2-4] c.jhub.profile.service.UserServiceTest   : req.x----com.jhub.profile.io.entity.User@62bc3ea0
+2021-03-03 12:32:30.369  INFO 30734 --- [nioEventLoopGroup-2-4] ---userRepository.saveAll()----          : onComplete()
+2021-03-03 12:32:30.375  INFO 30734 --- [nioEventLoopGroup-2-4] ---userRepository.saveAll()----          : onSubscribe(FluxUsingWhen.UsingWhenSubscriber)
+2021-03-03 12:32:30.375  INFO 30734 --- [nioEventLoopGroup-2-4] ---userRepository.saveAll()----          : request(unbounded)
+2021-03-03 12:32:30.377  INFO 30734 --- [nioEventLoopGroup-2-3] ---userRepository.saveAll()----          : onNext(com.jhub.profile.io.entity.User@62bc3ea0)
+2021-03-03 12:32:30.378  INFO 30734 --- [nioEventLoopGroup-2-3] c.jhub.profile.service.UserServiceTest   : res.u----UserDto(id=603f034eadd3a84be87c1abd, firstName=Alexandra, lastName=Daddario, email=daddario@example.com, createdAt=2021-03-03T12:32:30.312, updatedAt=2021-03-03T12:32:30.321, deletedAt=2021-03-03T12:32:30.312)
+2021-03-03 12:32:30.379  INFO 30734 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:32:30.379+0900 I NETWORK  [thread1] connection accepted from 127.0.0.1:50424 #5 (5 connections now open)
+2021-03-03 12:32:30.385  INFO 30734 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:32:30.385+0900 I NETWORK  [conn5] received client metadata from 127.0.0.1:50424 conn5: { driver: { name: "mongo-java-driver|reactive-streams|spring-boot", version: "4.1.1" }, os: { type: "Linux", name: "Linux", architecture: "amd64", version: "5.4.0-66-generic" }, platform: "Java/Oracle Corporation/15.0.1+9-18" }
+2021-03-03 12:32:30.386  INFO 30734 --- [nioEventLoopGroup-2-5] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:5, serverValue:5}] to localhost:39467
+2021-03-03 12:32:30.387  INFO 30734 --- [nioEventLoopGroup-2-5] ---userRepository.saveAll()----          : onNext(com.jhub.profile.io.entity.User@582a49b8)
+2021-03-03 12:32:30.387  INFO 30734 --- [nioEventLoopGroup-2-5] c.jhub.profile.service.UserServiceTest   : res.u----UserDto(id=603f034eadd3a84be87c1abd, firstName=Alexandra, lastName=Daddario, email=daddario@example.com, createdAt=2021-03-03T12:32:30.312, updatedAt=2021-03-03T12:32:30.321, deletedAt=2021-03-03T12:32:30.312)
+2021-03-03 12:34:22.369  INFO 31463 --- [main] c.jhub.profile.service.UserServiceTest   : Starting UserServiceTest using Java 15.0.1 on LS-194 with PID 31463 (started by jahangir in /home/jahangir/spring_project/ms-profile-service-api)
+2021-03-03 12:34:22.369 DEBUG 31463 --- [main] c.jhub.profile.service.UserServiceTest   : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-03-03 12:34:22.371  INFO 31463 --- [main] c.jhub.profile.service.UserServiceTest   : No active profile set, falling back to default profiles: default
+2021-03-03 12:34:22.536  INFO 31463 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2021-03-03 12:34:22.607  INFO 31463 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 68 ms. Found 1 Reactive MongoDB repository interfaces.
+2021-03-03 12:34:22.821  INFO 31463 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : note: noprealloc may hurt performance in many applications
+2021-03-03 12:34:22.823  INFO 31463 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:34:22.823+0900 I CONTROL  [initandlisten] MongoDB starting : pid=31502 port=41853 dbpath=/tmp/embedmongo-db-b04caff1-9f1a-46e4-84d2-bae20d4949a7 64-bit host=LS-194
+2021-03-03 12:34:22.823  INFO 31463 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:34:22.823+0900 I CONTROL  [initandlisten] db version v3.5.5
+2021-03-03 12:34:22.823  INFO 31463 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:34:22.823+0900 I CONTROL  [initandlisten] git version: 98515c812b6fa893613f063dae568ff8319cbfbd
+2021-03-03 12:34:22.823  INFO 31463 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:34:22.823+0900 I CONTROL  [initandlisten] allocator: tcmalloc
+2021-03-03 12:34:22.823  INFO 31463 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:34:22.823+0900 I CONTROL  [initandlisten] modules: none
+2021-03-03 12:34:22.823  INFO 31463 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:34:22.823+0900 I CONTROL  [initandlisten] build environment:
+2021-03-03 12:34:22.823  INFO 31463 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:34:22.823+0900 I CONTROL  [initandlisten]     distarch: x86_64
+2021-03-03 12:34:22.823  INFO 31463 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:34:22.823+0900 I CONTROL  [initandlisten]     target_arch: x86_64
+2021-03-03 12:34:22.824  INFO 31463 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:34:22.823+0900 I CONTROL  [initandlisten] options: { net: { bindIp: "127.0.0.1", http: { enabled: false }, port: 41853 }, security: { authorization: "disabled" }, storage: { dbPath: "/tmp/embedmongo-db-b04caff1-9f1a-46e4-84d2-bae20d4949a7", journal: { enabled: false }, mmapv1: { preallocDataFiles: false, smallFiles: true }, syncPeriodSecs: 0.0 } }
+2021-03-03 12:34:22.825  INFO 31463 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:34:22.825+0900 I STORAGE  [initandlisten] 
+2021-03-03 12:34:22.825  INFO 31463 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:34:22.825+0900 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2021-03-03 12:34:22.825  INFO 31463 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:34:22.825+0900 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+2021-03-03 12:34:22.825  INFO 31463 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:34:22.825+0900 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=7391M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=0,log_size=2GB),statistics_log=(wait=0),verbose=(recovery_progress),,log=(enabled=false),
+2021-03-03 12:34:22.946  INFO 31463 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:34:22.946+0900 W STORAGE  [initandlisten] Detected configuration for non-active storage engine mmapv1 when current storage engine is wiredTiger
+2021-03-03 12:34:22.946  INFO 31463 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:34:22.946+0900 I CONTROL  [initandlisten] 
+2021-03-03 12:34:22.946  INFO 31463 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:34:22.946+0900 I CONTROL  [initandlisten] ** NOTE: This is a development version (3.5.5) of MongoDB.
+2021-03-03 12:34:22.946  INFO 31463 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:34:22.946+0900 I CONTROL  [initandlisten] **       Not recommended for production.
+2021-03-03 12:34:22.946  INFO 31463 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:34:22.946+0900 I CONTROL  [initandlisten] 
+2021-03-03 12:34:22.947  INFO 31463 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:34:22.946+0900 I CONTROL  [initandlisten] 
+2021-03-03 12:34:22.947  INFO 31463 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:34:22.946+0900 I CONTROL  [initandlisten] ** WARNING: soft rlimits too low. rlimits set to 63035 processes, 1048576 files. Number of processes should be at least 524288 : 0.5 times number of files.
+2021-03-03 12:34:22.990  INFO 31463 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:34:22.990+0900 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/tmp/embedmongo-db-b04caff1-9f1a-46e4-84d2-bae20d4949a7/diagnostic.data'
+2021-03-03 12:34:23.056  INFO 31463 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:34:23.056+0900 I INDEX    [initandlisten] build index on: admin.system.version properties: { v: 2, key: { version: 1 }, name: "incompatible_with_version_32", ns: "admin.system.version" }
+2021-03-03 12:34:23.057  INFO 31463 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:34:23.056+0900 I INDEX    [initandlisten] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2021-03-03 12:34:23.057  INFO 31463 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:34:23.057+0900 I INDEX    [initandlisten] build index done.  scanned 0 total records. 0 secs
+2021-03-03 12:34:23.057  INFO 31463 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:34:23.057+0900 I COMMAND  [initandlisten] setting featureCompatibilityVersion to 3.4
+2021-03-03 12:34:23.057  INFO 31463 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:34:23.057+0900 I NETWORK  [thread1] waiting for connections on port 41853
+2021-03-03 12:34:23.057  INFO 31463 --- [main] d.f.embed.mongo.MongodExecutable         : start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@76ad6715
+2021-03-03 12:34:23.159  INFO 31463 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:41853], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-03-03 12:34:23.203  INFO 31463 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:34:23.203+0900 I NETWORK  [thread1] connection accepted from 127.0.0.1:54380 #1 (1 connection now open)
+2021-03-03 12:34:23.203  INFO 31463 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:34:23.203+0900 I NETWORK  [thread1] connection accepted from 127.0.0.1:54382 #2 (2 connections now open)
+2021-03-03 12:34:23.227  INFO 31463 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:34:23.227+0900 I NETWORK  [conn2] received client metadata from 127.0.0.1:54382 conn2: { driver: { name: "mongo-java-driver|reactive-streams|spring-boot", version: "4.1.1" }, os: { type: "Linux", name: "Linux", architecture: "amd64", version: "5.4.0-66-generic" }, platform: "Java/Oracle Corporation/15.0.1+9-18" }
+2021-03-03 12:34:23.227  INFO 31463 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:34:23.227+0900 I NETWORK  [conn1] received client metadata from 127.0.0.1:54380 conn1: { driver: { name: "mongo-java-driver|reactive-streams|spring-boot", version: "4.1.1" }, os: { type: "Linux", name: "Linux", architecture: "amd64", version: "5.4.0-66-generic" }, platform: "Java/Oracle Corporation/15.0.1+9-18" }
+2021-03-03 12:34:23.246  INFO 31463 --- [cluster-ClusterId{value='603f03bfcf7ff465d7bd7aae', description='null'}-localhost:41853] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:2}] to localhost:41853
+2021-03-03 12:34:23.246  INFO 31463 --- [cluster-rtt-ClusterId{value='603f03bfcf7ff465d7bd7aae', description='null'}-localhost:41853] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:1}] to localhost:41853
+2021-03-03 12:34:23.246  INFO 31463 --- [cluster-ClusterId{value='603f03bfcf7ff465d7bd7aae', description='null'}-localhost:41853] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:41853, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=5, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=null, roundTripTimeNanos=39175427}
+2021-03-03 12:34:23.380  WARN 31463 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+2021-03-03 12:34:23.503  INFO 31463 --- [main] c.jhub.profile.service.UserServiceTest   : Started UserServiceTest in 1.34 seconds (JVM running for 1.901)
+2021-03-03 12:34:23.694  INFO 31463 --- [main] c.jhub.profile.service.UserServiceTest   : -----Test 3: delete()------
+2021-03-03 12:34:23.759  INFO 31463 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:34:23.759+0900 I NETWORK  [thread1] connection accepted from 127.0.0.1:54386 #3 (3 connections now open)
+2021-03-03 12:34:23.765  INFO 31463 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:34:23.765+0900 I NETWORK  [conn3] received client metadata from 127.0.0.1:54386 conn3: { driver: { name: "mongo-java-driver|reactive-streams|spring-boot", version: "4.1.1" }, os: { type: "Linux", name: "Linux", architecture: "amd64", version: "5.4.0-66-generic" }, platform: "Java/Oracle Corporation/15.0.1+9-18" }
+2021-03-03 12:34:23.768  INFO 31463 --- [nioEventLoopGroup-2-3] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:3}] to localhost:41853
+2021-03-03 12:34:23.870  INFO 31463 --- [main] c.jhub.profile.service.UserServiceTest   : -----Test 4: update()------
+2021-03-03 12:34:23.889  INFO 31463 --- [main] c.jhub.profile.service.UserServiceTest   : -----Test 5: getById()------
+2021-03-03 12:34:23.894  INFO 31463 --- [main] c.jhub.profile.service.UserServiceTest   : -----Test 2: save()------
+2021-03-03 12:34:23.901  INFO 31463 --- [main] c.jhub.profile.service.UserServiceTest   : -----Test 1: getAll()------
+2021-03-03 12:34:23.905 DEBUG 31463 --- [main] c.j.p.ws.service.impl.UserServiceImpl    : ------User getAll() is accessed------
+2021-03-03 12:34:23.906  INFO 31463 --- [main] c.jhub.profile.service.UserServiceTest   : -------invoking StepVerifier------------------
+2021-03-03 12:34:23.908  INFO 31463 --- [main] ---userRepository.saveAll()----          : onSubscribe(FluxUsingWhen.UsingWhenConditionalSubscriber)
+2021-03-03 12:34:23.908  INFO 31463 --- [main] ---userRepository.saveAll()----          : request(unbounded)
+2021-03-03 12:34:23.911  INFO 31463 --- [nioEventLoopGroup-2-3] ---userRepository.saveAll()----          : onNext(com.jhub.profile.io.entity.User@5535ce34)
+2021-03-03 12:34:23.911  INFO 31463 --- [nioEventLoopGroup-2-3] c.jhub.profile.service.UserServiceTest   : req.x----com.jhub.profile.io.entity.User@5535ce34
+2021-03-03 12:34:23.912  INFO 31463 --- [nioEventLoopGroup-2-3] ---userRepository.saveAll()----          : onNext(com.jhub.profile.io.entity.User@4ad3b3bf)
+2021-03-03 12:34:23.912  INFO 31463 --- [nioEventLoopGroup-2-3] c.jhub.profile.service.UserServiceTest   : req.x----com.jhub.profile.io.entity.User@4ad3b3bf
+2021-03-03 12:34:23.913  INFO 31463 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:34:23.913+0900 I NETWORK  [thread1] connection accepted from 127.0.0.1:54388 #4 (4 connections now open)
+2021-03-03 12:34:23.918  INFO 31463 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:34:23.918+0900 I NETWORK  [conn4] received client metadata from 127.0.0.1:54388 conn4: { driver: { name: "mongo-java-driver|reactive-streams|spring-boot", version: "4.1.1" }, os: { type: "Linux", name: "Linux", architecture: "amd64", version: "5.4.0-66-generic" }, platform: "Java/Oracle Corporation/15.0.1+9-18" }
+2021-03-03 12:34:23.919  INFO 31463 --- [nioEventLoopGroup-2-4] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:4, serverValue:4}] to localhost:41853
+2021-03-03 12:34:23.920  INFO 31463 --- [nioEventLoopGroup-2-4] ---userRepository.saveAll()----          : onNext(com.jhub.profile.io.entity.User@5a9a4c8a)
+2021-03-03 12:34:23.920  INFO 31463 --- [nioEventLoopGroup-2-4] c.jhub.profile.service.UserServiceTest   : req.x----com.jhub.profile.io.entity.User@5a9a4c8a
+2021-03-03 12:34:23.920  INFO 31463 --- [nioEventLoopGroup-2-4] ---userRepository.saveAll()----          : onComplete()
+2021-03-03 12:34:23.926  INFO 31463 --- [nioEventLoopGroup-2-4] ---userRepository.saveAll()----          : onSubscribe(FluxUsingWhen.UsingWhenSubscriber)
+2021-03-03 12:34:23.926  INFO 31463 --- [nioEventLoopGroup-2-4] ---userRepository.saveAll()----          : request(unbounded)
+2021-03-03 12:34:23.929  INFO 31463 --- [nioEventLoopGroup-2-3] ---userRepository.saveAll()----          : onNext(com.jhub.profile.io.entity.User@4ad3b3bf)
+2021-03-03 12:34:23.929  INFO 31463 --- [nioEventLoopGroup-2-3] c.jhub.profile.service.UserServiceTest   : res.u----UserDto(id=603f03bfcf7ff465d7bd7ab0, firstName=Alexandra, lastName=Daddario, email=daddario@example.com, createdAt=2021-03-03T12:34:23.870, updatedAt=2021-03-03T12:34:23.880, deletedAt=2021-03-03T12:34:23.870)
+2021-03-03 12:34:23.929  INFO 31463 --- [nioEventLoopGroup-2-3] ---userRepository.saveAll()----          : onNext(com.jhub.profile.io.entity.User@5a9a4c8a)
+2021-03-03 12:34:23.930  INFO 31463 --- [nioEventLoopGroup-2-3] c.jhub.profile.service.UserServiceTest   : res.u----UserDto(id=603f03bfcf7ff465d7bd7ab0, firstName=Alexandra, lastName=Daddario, email=daddario@example.com, createdAt=2021-03-03T12:34:23.870, updatedAt=2021-03-03T12:34:23.880, deletedAt=2021-03-03T12:34:23.870)
+2021-03-03 12:38:52.737  INFO 16913 --- [restartedMain] ofileServiceWithSpringWebfluxApplication : Starting ProfileServiceWithSpringWebfluxApplication using Java 15.0.1 on LS-194 with PID 16913 (/home/jahangir/spring_project/ms-profile-service-api/target/classes started by jahangir in /home/jahangir/spring_project/ms-profile-service-api)
+2021-03-03 12:38:52.737 DEBUG 16913 --- [restartedMain] ofileServiceWithSpringWebfluxApplication : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-03-03 12:38:52.737  INFO 16913 --- [restartedMain] ofileServiceWithSpringWebfluxApplication : No active profile set, falling back to default profiles: default
+2021-03-03 12:38:52.786  INFO 16913 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2021-03-03 12:38:52.788  INFO 16913 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 1 Reactive MongoDB repository interfaces.
+2021-03-03 12:38:52.806  INFO 16913 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-03-03 12:38:52.807  INFO 16913 --- [cluster-rtt-ClusterId{value='603f04cc365418009963d122', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:29, serverValue:33}] to localhost:27017
+2021-03-03 12:38:52.808  INFO 16913 --- [cluster-ClusterId{value='603f04cc365418009963d122', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:28, serverValue:34}] to localhost:27017
+2021-03-03 12:38:52.808  INFO 16913 --- [cluster-ClusterId{value='603f04cc365418009963d122', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=482242}
+2021-03-03 12:38:52.811  WARN 16913 --- [restartedMain] onfigReactiveWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userServiceImpl' defined in file [/home/jahangir/spring_project/ms-profile-service-api/target/classes/com/jhub/profile/ws/service/impl/UserServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository' defined in com.jhub.profile.repository.UserRepository defined in @EnableReactiveMongoRepositories declared on MongoReactiveRepositoriesRegistrar.EnableReactiveMongoRepositoriesConfiguration: Cannot resolve reference to bean 'reactiveMongoTemplate' while setting bean property 'reactiveMongoOperations'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'reactiveMongoTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoReactiveDataAutoConfiguration.class]: Unsatisfied dependency expressed through method 'reactiveMongoTemplate' parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mappingMongoConverter' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoReactiveDataAutoConfiguration.class]: Unsatisfied dependency expressed through method 'mappingMongoConverter' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongoMappingContext' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDataConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.data.mapping.MappingException: Ambiguous field mapping detected! Both private java.time.LocalDateTime com.jhub.profile.io.entity.BaseEntity.createdAt and private java.time.LocalDateTime com.jhub.profile.io.entity.User.createdAt map to the same field name createdAt! Disambiguate using @Field annotation!
+2021-03-03 12:38:54.827  INFO 16913 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-03-03 12:38:54.830 ERROR 16913 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userServiceImpl' defined in file [/home/jahangir/spring_project/ms-profile-service-api/target/classes/com/jhub/profile/ws/service/impl/UserServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository' defined in com.jhub.profile.repository.UserRepository defined in @EnableReactiveMongoRepositories declared on MongoReactiveRepositoriesRegistrar.EnableReactiveMongoRepositoriesConfiguration: Cannot resolve reference to bean 'reactiveMongoTemplate' while setting bean property 'reactiveMongoOperations'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'reactiveMongoTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoReactiveDataAutoConfiguration.class]: Unsatisfied dependency expressed through method 'reactiveMongoTemplate' parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mappingMongoConverter' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoReactiveDataAutoConfiguration.class]: Unsatisfied dependency expressed through method 'mappingMongoConverter' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongoMappingContext' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDataConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.data.mapping.MappingException: Ambiguous field mapping detected! Both private java.time.LocalDateTime com.jhub.profile.io.entity.BaseEntity.createdAt and private java.time.LocalDateTime com.jhub.profile.io.entity.User.createdAt map to the same field name createdAt! Disambiguate using @Field annotation!
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1356) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1206) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:571) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:923) ~[spring-context-5.3.3.jar:5.3.3]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:588) ~[spring-context-5.3.3.jar:5.3.3]
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:63) ~[spring-boot-2.4.2.jar:2.4.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:767) ~[spring-boot-2.4.2.jar:2.4.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759) ~[spring-boot-2.4.2.jar:2.4.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:426) ~[spring-boot-2.4.2.jar:2.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:326) ~[spring-boot-2.4.2.jar:2.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1311) ~[spring-boot-2.4.2.jar:2.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1300) ~[spring-boot-2.4.2.jar:2.4.2]
+	at com.jhub.profile.ProfileServiceWithSpringWebfluxApplication.main(ProfileServiceWithSpringWebfluxApplication.java:12) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.4.2.jar:2.4.2]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository' defined in com.jhub.profile.repository.UserRepository defined in @EnableReactiveMongoRepositories declared on MongoReactiveRepositoriesRegistrar.EnableReactiveMongoRepositoriesConfiguration: Cannot resolve reference to bean 'reactiveMongoTemplate' while setting bean property 'reactiveMongoOperations'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'reactiveMongoTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoReactiveDataAutoConfiguration.class]: Unsatisfied dependency expressed through method 'reactiveMongoTemplate' parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mappingMongoConverter' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoReactiveDataAutoConfiguration.class]: Unsatisfied dependency expressed through method 'mappingMongoConverter' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongoMappingContext' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDataConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.data.mapping.MappingException: Ambiguous field mapping detected! Both private java.time.LocalDateTime com.jhub.profile.io.entity.BaseEntity.createdAt and private java.time.LocalDateTime com.jhub.profile.io.entity.User.createdAt map to the same field name createdAt! Disambiguate using @Field annotation!
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:342) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1691) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1436) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:608) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.3.jar:5.3.3]
+	... 25 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'reactiveMongoTemplate' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoReactiveDataAutoConfiguration.class]: Unsatisfied dependency expressed through method 'reactiveMongoTemplate' parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mappingMongoConverter' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoReactiveDataAutoConfiguration.class]: Unsatisfied dependency expressed through method 'mappingMongoConverter' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongoMappingContext' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDataConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.data.mapping.MappingException: Ambiguous field mapping detected! Both private java.time.LocalDateTime com.jhub.profile.io.entity.BaseEntity.createdAt and private java.time.LocalDateTime com.jhub.profile.io.entity.User.createdAt map to the same field name createdAt! Disambiguate using @Field annotation!
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:541) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1179) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:571) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330) ~[spring-beans-5.3.3.jar:5.3.3]
+	... 39 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mappingMongoConverter' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoReactiveDataAutoConfiguration.class]: Unsatisfied dependency expressed through method 'mappingMongoConverter' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongoMappingContext' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDataConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.data.mapping.MappingException: Ambiguous field mapping detected! Both private java.time.LocalDateTime com.jhub.profile.io.entity.BaseEntity.createdAt and private java.time.LocalDateTime com.jhub.profile.io.entity.User.createdAt map to the same field name createdAt! Disambiguate using @Field annotation!
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:541) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1179) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:571) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.3.jar:5.3.3]
+	... 49 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mongoMappingContext' defined in class path resource [org/springframework/boot/autoconfigure/data/mongo/MongoDataConfiguration.class]: Invocation of init method failed; nested exception is org.springframework.data.mapping.MappingException: Ambiguous field mapping detected! Both private java.time.LocalDateTime com.jhub.profile.io.entity.BaseEntity.createdAt and private java.time.LocalDateTime com.jhub.profile.io.entity.User.createdAt map to the same field name createdAt! Disambiguate using @Field annotation!
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1788) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:609) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.3.jar:5.3.3]
+	... 63 common frames omitted
+Caused by: org.springframework.data.mapping.MappingException: Ambiguous field mapping detected! Both private java.time.LocalDateTime com.jhub.profile.io.entity.BaseEntity.createdAt and private java.time.LocalDateTime com.jhub.profile.io.entity.User.createdAt map to the same field name createdAt! Disambiguate using @Field annotation!
+	at org.springframework.data.mongodb.core.mapping.BasicMongoPersistentEntity$AssertFieldNameUniquenessHandler.assertUniqueness(BasicMongoPersistentEntity.java:355) ~[spring-data-mongodb-3.1.3.jar:3.1.3]
+	at org.springframework.data.mongodb.core.mapping.BasicMongoPersistentEntity$AssertFieldNameUniquenessHandler.doWithPersistentProperty(BasicMongoPersistentEntity.java:341) ~[spring-data-mongodb-3.1.3.jar:3.1.3]
+	at org.springframework.data.mongodb.core.mapping.BasicMongoPersistentEntity$AssertFieldNameUniquenessHandler.doWithPersistentProperty(BasicMongoPersistentEntity.java:335) ~[spring-data-mongodb-3.1.3.jar:3.1.3]
+	at org.springframework.data.mapping.model.BasicPersistentEntity.doWithProperties(BasicPersistentEntity.java:360) ~[spring-data-commons-2.4.3.jar:2.4.3]
+	at org.springframework.data.mongodb.core.mapping.BasicMongoPersistentEntity.verifyFieldUniqueness(BasicMongoPersistentEntity.java:218) ~[spring-data-mongodb-3.1.3.jar:3.1.3]
+	at org.springframework.data.mongodb.core.mapping.BasicMongoPersistentEntity.verify(BasicMongoPersistentEntity.java:201) ~[spring-data-mongodb-3.1.3.jar:3.1.3]
+	at org.springframework.data.mapping.context.AbstractMappingContext.addPersistentEntity(AbstractMappingContext.java:388) ~[spring-data-commons-2.4.3.jar:2.4.3]
+	at org.springframework.data.mapping.context.AbstractMappingContext.addPersistentEntity(AbstractMappingContext.java:334) ~[spring-data-commons-2.4.3.jar:2.4.3]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.data.mapping.context.AbstractMappingContext.initialize(AbstractMappingContext.java:463) ~[spring-data-commons-2.4.3.jar:2.4.3]
+	at org.springframework.data.mapping.context.AbstractMappingContext.afterPropertiesSet(AbstractMappingContext.java:455) ~[spring-data-commons-2.4.3.jar:2.4.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1847) ~[spring-beans-5.3.3.jar:5.3.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1784) ~[spring-beans-5.3.3.jar:5.3.3]
+	... 74 common frames omitted
+
+2021-03-03 12:39:12.584  INFO 30734 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:39:12.584+0900 I CONTROL  [signalProcessingThread] got signal 15 (Terminated), will terminate after current cmd ends
+2021-03-03 12:39:12.584  INFO 30734 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:39:12.584+0900 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2021-03-03 12:39:12.584  INFO 30734 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:39:12.584+0900 I NETWORK  [signalProcessingThread] closing listening socket: 7
+2021-03-03 12:39:12.584  INFO 30734 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:39:12.584+0900 I NETWORK  [signalProcessingThread] closing listening socket: 8
+2021-03-03 12:39:12.584  INFO 30734 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:39:12.584+0900 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-39467.sock
+2021-03-03 12:39:12.584  INFO 30734 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:39:12.584+0900 I NETWORK  [signalProcessingThread] shutdown: going to flush diaglog...
+2021-03-03 12:39:12.584  INFO 30734 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:39:12.584+0900 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2021-03-03 12:39:12.585  INFO 30734 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:39:12.585+0900 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2021-03-03 12:39:12.586  INFO 30734 --- [SpringContextShutdownHook] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:3, serverValue:3}] to localhost:39467 because the pool has been closed.
+2021-03-03 12:39:12.586  INFO 30734 --- [SpringContextShutdownHook] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:5, serverValue:5}] to localhost:39467 because the pool has been closed.
+2021-03-03 12:39:12.587  INFO 30734 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:39:12.586+0900 I -        [conn3] end connection 127.0.0.1:50420 (5 connections now open)
+2021-03-03 12:39:12.587  INFO 30734 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:39:12.586+0900 I -        [conn1] end connection 127.0.0.1:50414 (4 connections now open)
+2021-03-03 12:39:12.587  INFO 30734 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:39:12.586+0900 I -        [conn2] end connection 127.0.0.1:50416 (4 connections now open)
+2021-03-03 12:39:12.587  INFO 30734 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:39:12.586+0900 I -        [conn5] end connection 127.0.0.1:50424 (2 connections now open)
+2021-03-03 12:39:12.629  INFO 30734 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:39:12.629+0900 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2021-03-03 12:39:12.629  INFO 30734 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:39:12.629+0900 I CONTROL  [signalProcessingThread] now exiting
+2021-03-03 12:39:12.629  INFO 30734 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:39:12.629+0900 I CONTROL  [signalProcessingThread] shutting down with code:0
+2021-03-03 12:39:20.664  INFO 31463 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:39:20.664+0900 I CONTROL  [signalProcessingThread] got signal 15 (Terminated), will terminate after current cmd ends
+2021-03-03 12:39:20.665  INFO 31463 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:39:20.664+0900 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2021-03-03 12:39:20.665  INFO 31463 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:39:20.664+0900 I NETWORK  [signalProcessingThread] closing listening socket: 7
+2021-03-03 12:39:20.665  INFO 31463 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:39:20.664+0900 I NETWORK  [signalProcessingThread] closing listening socket: 8
+2021-03-03 12:39:20.665  INFO 31463 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:39:20.664+0900 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-41853.sock
+2021-03-03 12:39:20.665  INFO 31463 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:39:20.664+0900 I NETWORK  [signalProcessingThread] shutdown: going to flush diaglog...
+2021-03-03 12:39:20.665  INFO 31463 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:39:20.664+0900 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2021-03-03 12:39:20.666  INFO 31463 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:39:20.666+0900 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2021-03-03 12:39:20.667  INFO 31463 --- [SpringContextShutdownHook] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:3, serverValue:3}] to localhost:41853 because the pool has been closed.
+2021-03-03 12:39:20.667  INFO 31463 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:39:20.667+0900 I -        [conn3] end connection 127.0.0.1:54386 (4 connections now open)
+2021-03-03 12:39:20.667  INFO 31463 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:39:20.667+0900 I -        [conn2] end connection 127.0.0.1:54382 (3 connections now open)
+2021-03-03 12:39:20.667  INFO 31463 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:39:20.667+0900 I -        [conn1] end connection 127.0.0.1:54380 (4 connections now open)
+2021-03-03 12:39:20.710  INFO 31463 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:39:20.710+0900 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2021-03-03 12:39:20.710  INFO 31463 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:39:20.710+0900 I CONTROL  [signalProcessingThread] now exiting
+2021-03-03 12:39:20.710  INFO 31463 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:39:20.710+0900 I CONTROL  [signalProcessingThread] shutting down with code:0
+2021-03-03 12:39:20.710  INFO 31463 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:39:20.710+0900 I CONTROL  [initandlisten] shutting down with code:0
+2021-03-03 12:51:21.756  INFO 5240 --- [main] c.jhub.profile.service.UserServiceTest   : Starting UserServiceTest using Java 15.0.1 on LS-194 with PID 5240 (started by jahangir in /home/jahangir/spring_project/ms-profile-service-api)
+2021-03-03 12:51:21.757 DEBUG 5240 --- [main] c.jhub.profile.service.UserServiceTest   : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-03-03 12:51:21.759  INFO 5240 --- [main] c.jhub.profile.service.UserServiceTest   : No active profile set, falling back to default profiles: default
+2021-03-03 12:51:21.937  INFO 5240 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2021-03-03 12:51:22.014  INFO 5240 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 73 ms. Found 1 Reactive MongoDB repository interfaces.
+2021-03-03 12:51:22.249  INFO 5240 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : note: noprealloc may hurt performance in many applications
+2021-03-03 12:51:22.251  INFO 5240 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:51:22.251+0900 I CONTROL  [initandlisten] MongoDB starting : pid=5280 port=33781 dbpath=/tmp/embedmongo-db-c21833e2-1c26-4fc6-85c0-eca094fa5156 64-bit host=LS-194
+2021-03-03 12:51:22.251  INFO 5240 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:51:22.251+0900 I CONTROL  [initandlisten] db version v3.5.5
+2021-03-03 12:51:22.251  INFO 5240 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:51:22.251+0900 I CONTROL  [initandlisten] git version: 98515c812b6fa893613f063dae568ff8319cbfbd
+2021-03-03 12:51:22.251  INFO 5240 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:51:22.251+0900 I CONTROL  [initandlisten] allocator: tcmalloc
+2021-03-03 12:51:22.251  INFO 5240 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:51:22.251+0900 I CONTROL  [initandlisten] modules: none
+2021-03-03 12:51:22.251  INFO 5240 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:51:22.251+0900 I CONTROL  [initandlisten] build environment:
+2021-03-03 12:51:22.251  INFO 5240 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:51:22.251+0900 I CONTROL  [initandlisten]     distarch: x86_64
+2021-03-03 12:51:22.251  INFO 5240 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:51:22.251+0900 I CONTROL  [initandlisten]     target_arch: x86_64
+2021-03-03 12:51:22.251  INFO 5240 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:51:22.251+0900 I CONTROL  [initandlisten] options: { net: { bindIp: "127.0.0.1", http: { enabled: false }, port: 33781 }, security: { authorization: "disabled" }, storage: { dbPath: "/tmp/embedmongo-db-c21833e2-1c26-4fc6-85c0-eca094fa5156", journal: { enabled: false }, mmapv1: { preallocDataFiles: false, smallFiles: true }, syncPeriodSecs: 0.0 } }
+2021-03-03 12:51:22.253  INFO 5240 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:51:22.253+0900 I STORAGE  [initandlisten] 
+2021-03-03 12:51:22.253  INFO 5240 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:51:22.253+0900 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2021-03-03 12:51:22.253  INFO 5240 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:51:22.253+0900 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+2021-03-03 12:51:22.254  INFO 5240 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:51:22.253+0900 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=7391M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=0,log_size=2GB),statistics_log=(wait=0),verbose=(recovery_progress),,log=(enabled=false),
+2021-03-03 12:51:22.344  INFO 5240 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:51:22.344+0900 W STORAGE  [initandlisten] Detected configuration for non-active storage engine mmapv1 when current storage engine is wiredTiger
+2021-03-03 12:51:22.344  INFO 5240 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:51:22.344+0900 I CONTROL  [initandlisten] 
+2021-03-03 12:51:22.344  INFO 5240 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:51:22.344+0900 I CONTROL  [initandlisten] ** NOTE: This is a development version (3.5.5) of MongoDB.
+2021-03-03 12:51:22.344  INFO 5240 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:51:22.344+0900 I CONTROL  [initandlisten] **       Not recommended for production.
+2021-03-03 12:51:22.344  INFO 5240 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:51:22.344+0900 I CONTROL  [initandlisten] 
+2021-03-03 12:51:22.344  INFO 5240 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:51:22.344+0900 I CONTROL  [initandlisten] 
+2021-03-03 12:51:22.344  INFO 5240 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:51:22.344+0900 I CONTROL  [initandlisten] ** WARNING: soft rlimits too low. rlimits set to 63035 processes, 1048576 files. Number of processes should be at least 524288 : 0.5 times number of files.
+2021-03-03 12:51:22.379  INFO 5240 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:51:22.379+0900 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/tmp/embedmongo-db-c21833e2-1c26-4fc6-85c0-eca094fa5156/diagnostic.data'
+2021-03-03 12:51:22.433  INFO 5240 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:51:22.432+0900 I INDEX    [initandlisten] build index on: admin.system.version properties: { v: 2, key: { version: 1 }, name: "incompatible_with_version_32", ns: "admin.system.version" }
+2021-03-03 12:51:22.433  INFO 5240 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:51:22.432+0900 I INDEX    [initandlisten] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2021-03-03 12:51:22.433  INFO 5240 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:51:22.433+0900 I INDEX    [initandlisten] build index done.  scanned 0 total records. 0 secs
+2021-03-03 12:51:22.433  INFO 5240 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:51:22.433+0900 I COMMAND  [initandlisten] setting featureCompatibilityVersion to 3.4
+2021-03-03 12:51:22.433  INFO 5240 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:51:22.433+0900 I NETWORK  [thread1] waiting for connections on port 33781
+2021-03-03 12:51:22.433  INFO 5240 --- [main] d.f.embed.mongo.MongodExecutable         : start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@f1d0004
+2021-03-03 12:51:22.519  INFO 5240 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:33781], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-03-03 12:51:22.563  INFO 5240 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:51:22.563+0900 I NETWORK  [thread1] connection accepted from 127.0.0.1:35340 #1 (1 connection now open)
+2021-03-03 12:51:22.563  INFO 5240 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:51:22.563+0900 I NETWORK  [thread1] connection accepted from 127.0.0.1:35338 #2 (2 connections now open)
+2021-03-03 12:51:22.586  INFO 5240 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:51:22.586+0900 I NETWORK  [conn1] received client metadata from 127.0.0.1:35340 conn1: { driver: { name: "mongo-java-driver|reactive-streams|spring-boot", version: "4.1.1" }, os: { type: "Linux", name: "Linux", architecture: "amd64", version: "5.4.0-66-generic" }, platform: "Java/Oracle Corporation/15.0.1+9-18" }
+2021-03-03 12:51:22.586  INFO 5240 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:51:22.586+0900 I NETWORK  [conn2] received client metadata from 127.0.0.1:35338 conn2: { driver: { name: "mongo-java-driver|reactive-streams|spring-boot", version: "4.1.1" }, os: { type: "Linux", name: "Linux", architecture: "amd64", version: "5.4.0-66-generic" }, platform: "Java/Oracle Corporation/15.0.1+9-18" }
+2021-03-03 12:51:22.603  INFO 5240 --- [cluster-rtt-ClusterId{value='603f07ba2422112e8b00dbf6', description='null'}-localhost:33781] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:2}] to localhost:33781
+2021-03-03 12:51:22.603  INFO 5240 --- [cluster-ClusterId{value='603f07ba2422112e8b00dbf6', description='null'}-localhost:33781] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:1}] to localhost:33781
+2021-03-03 12:51:22.604  INFO 5240 --- [cluster-ClusterId{value='603f07ba2422112e8b00dbf6', description='null'}-localhost:33781] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:33781, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=5, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=null, roundTripTimeNanos=37087811}
+2021-03-03 12:51:22.745  WARN 5240 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+2021-03-03 12:51:22.843  INFO 5240 --- [main] c.jhub.profile.service.UserServiceTest   : Started UserServiceTest in 1.374 seconds (JVM running for 1.974)
+2021-03-03 12:51:23.034  INFO 5240 --- [main] c.jhub.profile.service.UserServiceTest   : -----Test 3: delete()------
+2021-03-03 12:51:23.094  INFO 5240 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:51:23.094+0900 I NETWORK  [thread1] connection accepted from 127.0.0.1:35344 #3 (3 connections now open)
+2021-03-03 12:51:23.100  INFO 5240 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:51:23.100+0900 I NETWORK  [conn3] received client metadata from 127.0.0.1:35344 conn3: { driver: { name: "mongo-java-driver|reactive-streams|spring-boot", version: "4.1.1" }, os: { type: "Linux", name: "Linux", architecture: "amd64", version: "5.4.0-66-generic" }, platform: "Java/Oracle Corporation/15.0.1+9-18" }
+2021-03-03 12:51:23.102  INFO 5240 --- [nioEventLoopGroup-2-3] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:3}] to localhost:33781
+2021-03-03 12:51:23.184  INFO 5240 --- [main] c.jhub.profile.service.UserServiceTest   : -----Test 4: update()------
+2021-03-03 12:51:23.202  INFO 5240 --- [main] c.jhub.profile.service.UserServiceTest   : -----Test 5: getById()------
+2021-03-03 12:51:23.206  INFO 5240 --- [main] c.jhub.profile.service.UserServiceTest   : -----Test 2: save()------
+2021-03-03 12:51:23.212  INFO 5240 --- [main] c.jhub.profile.service.UserServiceTest   : -----Test 1: getAll()------
+2021-03-03 12:51:23.215 DEBUG 5240 --- [main] c.j.p.ws.service.impl.UserServiceImpl    : ------User getAll() is accessed------
+2021-03-03 12:51:23.216  INFO 5240 --- [main] c.jhub.profile.service.UserServiceTest   : -------invoking StepVerifier------------------
+2021-03-03 12:51:23.218  INFO 5240 --- [main] ---userRepository.saveAll()----          : onSubscribe(FluxUsingWhen.UsingWhenConditionalSubscriber)
+2021-03-03 12:51:23.219  INFO 5240 --- [main] ---userRepository.saveAll()----          : request(unbounded)
+2021-03-03 12:51:23.221  INFO 5240 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:51:23.221+0900 I NETWORK  [thread1] connection accepted from 127.0.0.1:35346 #4 (4 connections now open)
+2021-03-03 12:51:23.221  INFO 5240 --- [nioEventLoopGroup-2-3] ---userRepository.saveAll()----          : onNext(com.jhub.profile.io.entity.User@220261c8)
+2021-03-03 12:51:23.222  INFO 5240 --- [nioEventLoopGroup-2-3] c.jhub.profile.service.UserServiceTest   : req.x----com.jhub.profile.io.entity.User@220261c8
+2021-03-03 12:51:23.223  INFO 5240 --- [nioEventLoopGroup-2-3] ---userRepository.saveAll()----          : onNext(com.jhub.profile.io.entity.User@57b814bb)
+2021-03-03 12:51:23.223  INFO 5240 --- [nioEventLoopGroup-2-3] c.jhub.profile.service.UserServiceTest   : req.x----com.jhub.profile.io.entity.User@57b814bb
+2021-03-03 12:51:23.228  INFO 5240 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:51:23.228+0900 I NETWORK  [conn4] received client metadata from 127.0.0.1:35346 conn4: { driver: { name: "mongo-java-driver|reactive-streams|spring-boot", version: "4.1.1" }, os: { type: "Linux", name: "Linux", architecture: "amd64", version: "5.4.0-66-generic" }, platform: "Java/Oracle Corporation/15.0.1+9-18" }
+2021-03-03 12:51:23.229  INFO 5240 --- [nioEventLoopGroup-2-4] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:4, serverValue:4}] to localhost:33781
+2021-03-03 12:51:23.231  INFO 5240 --- [nioEventLoopGroup-2-4] ---userRepository.saveAll()----          : onNext(com.jhub.profile.io.entity.User@139c615d)
+2021-03-03 12:51:23.231  INFO 5240 --- [nioEventLoopGroup-2-4] c.jhub.profile.service.UserServiceTest   : req.x----com.jhub.profile.io.entity.User@139c615d
+2021-03-03 12:51:23.231  INFO 5240 --- [nioEventLoopGroup-2-4] ---userRepository.saveAll()----          : onComplete()
+2021-03-03 12:51:23.238  INFO 5240 --- [nioEventLoopGroup-2-4] ---userRepository.saveAll()----          : onSubscribe(FluxUsingWhen.UsingWhenSubscriber)
+2021-03-03 12:51:23.238  INFO 5240 --- [nioEventLoopGroup-2-4] ---userRepository.saveAll()----          : request(unbounded)
+2021-03-03 12:51:23.242  INFO 5240 --- [nioEventLoopGroup-2-3] ---userRepository.saveAll()----          : onNext(com.jhub.profile.io.entity.User@139c615d)
+2021-03-03 12:51:23.244  INFO 5240 --- [nioEventLoopGroup-2-3] c.jhub.profile.service.UserServiceTest   : res.u----com.jhub.profile.dto.UserDto@5b5076a4
+2021-03-03 12:51:23.245  INFO 5240 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:51:23.244+0900 I NETWORK  [thread1] connection accepted from 127.0.0.1:35348 #5 (5 connections now open)
+2021-03-03 12:51:23.250  INFO 5240 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:51:23.250+0900 I NETWORK  [conn5] received client metadata from 127.0.0.1:35348 conn5: { driver: { name: "mongo-java-driver|reactive-streams|spring-boot", version: "4.1.1" }, os: { type: "Linux", name: "Linux", architecture: "amd64", version: "5.4.0-66-generic" }, platform: "Java/Oracle Corporation/15.0.1+9-18" }
+2021-03-03 12:51:23.251  INFO 5240 --- [nioEventLoopGroup-2-5] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:5, serverValue:5}] to localhost:33781
+2021-03-03 12:51:23.252  INFO 5240 --- [nioEventLoopGroup-2-5] ---userRepository.saveAll()----          : onNext(com.jhub.profile.io.entity.User@57b814bb)
+2021-03-03 12:51:23.252  INFO 5240 --- [nioEventLoopGroup-2-5] c.jhub.profile.service.UserServiceTest   : res.u----com.jhub.profile.dto.UserDto@5b5076a4
+2021-03-03 12:52:41.399  INFO 5240 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:52:41.399+0900 I CONTROL  [signalProcessingThread] got signal 15 (Terminated), will terminate after current cmd ends
+2021-03-03 12:52:41.400  INFO 5240 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:52:41.399+0900 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2021-03-03 12:52:41.400  INFO 5240 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:52:41.399+0900 I NETWORK  [signalProcessingThread] closing listening socket: 7
+2021-03-03 12:52:41.400  INFO 5240 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:52:41.399+0900 I NETWORK  [signalProcessingThread] closing listening socket: 8
+2021-03-03 12:52:41.400  INFO 5240 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:52:41.399+0900 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-33781.sock
+2021-03-03 12:52:41.400  INFO 5240 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:52:41.399+0900 I NETWORK  [signalProcessingThread] shutdown: going to flush diaglog...
+2021-03-03 12:52:41.400  INFO 5240 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:52:41.399+0900 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2021-03-03 12:52:41.401  INFO 5240 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:52:41.401+0900 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2021-03-03 12:52:41.402  INFO 5240 --- [SpringContextShutdownHook] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:3, serverValue:3}] to localhost:33781 because the pool has been closed.
+2021-03-03 12:52:41.402  INFO 5240 --- [SpringContextShutdownHook] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:5, serverValue:5}] to localhost:33781 because the pool has been closed.
+2021-03-03 12:52:41.403  INFO 5240 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:52:41.403+0900 I -        [conn3] end connection 127.0.0.1:35344 (5 connections now open)
+2021-03-03 12:52:41.403  INFO 5240 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:52:41.403+0900 I -        [conn1] end connection 127.0.0.1:35340 (4 connections now open)
+2021-03-03 12:52:41.403  INFO 5240 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:52:41.403+0900 I -        [conn5] end connection 127.0.0.1:35348 (5 connections now open)
+2021-03-03 12:52:41.403  INFO 5240 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:52:41.403+0900 I -        [conn2] end connection 127.0.0.1:35338 (2 connections now open)
+2021-03-03 12:52:41.460  INFO 5240 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:52:41.460+0900 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2021-03-03 12:52:41.460  INFO 5240 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:52:41.460+0900 I CONTROL  [signalProcessingThread] now exiting
+2021-03-03 12:52:41.460  INFO 5240 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:52:41.460+0900 I CONTROL  [signalProcessingThread] shutting down with code:0
+2021-03-03 12:52:41.460  INFO 5240 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T12:52:41.460+0900 I CONTROL  [initandlisten] shutting down with code:0
+2021-03-03 12:53:03.060  INFO 5846 --- [restartedMain] ofileServiceWithSpringWebfluxApplication : Starting ProfileServiceWithSpringWebfluxApplication using Java 15.0.1 on LS-194 with PID 5846 (/home/jahangir/spring_project/ms-profile-service-api/target/classes started by jahangir in /home/jahangir/spring_project/ms-profile-service-api)
+2021-03-03 12:53:03.061 DEBUG 5846 --- [restartedMain] ofileServiceWithSpringWebfluxApplication : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-03-03 12:53:03.062  INFO 5846 --- [restartedMain] ofileServiceWithSpringWebfluxApplication : No active profile set, falling back to default profiles: default
+2021-03-03 12:53:03.085  INFO 5846 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-03-03 12:53:03.086  INFO 5846 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-03-03 12:53:03.373  INFO 5846 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2021-03-03 12:53:03.437  INFO 5846 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 1 Reactive MongoDB repository interfaces.
+2021-03-03 12:53:03.698  INFO 5846 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-03-03 12:53:03.776  INFO 5846 --- [cluster-rtt-ClusterId{value='603f081fc4fe717006267d98', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:36}] to localhost:27017
+2021-03-03 12:53:03.776  INFO 5846 --- [cluster-ClusterId{value='603f081fc4fe717006267d98', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:35}] to localhost:27017
+2021-03-03 12:53:03.776  INFO 5846 --- [cluster-ClusterId{value='603f081fc4fe717006267d98', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=39687198}
+2021-03-03 12:53:03.802  INFO 5846 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-03-03 12:53:03.903  INFO 5846 --- [restartedMain] org.reflections.Reflections              : Reflections took 3 ms to scan 1 urls, producing 0 keys and 0 values 
+2021-03-03 12:53:04.193  INFO 5846 --- [restartedMain] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port 8081
+2021-03-03 12:53:04.201  INFO 5846 --- [restartedMain] ofileServiceWithSpringWebfluxApplication : Started ProfileServiceWithSpringWebfluxApplication in 1.352 seconds (JVM running for 1.788)
+2021-03-03 12:53:10.538 DEBUG 5846 --- [reactor-http-epoll-3] c.j.p.ws.service.impl.UserServiceImpl    : ------User getAll() is accessed------
+2021-03-03 12:53:10.617  INFO 5846 --- [nioEventLoopGroup-3-3] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:37}] to localhost:27017
+2021-03-03 12:53:12.394 DEBUG 5846 --- [reactor-http-epoll-3] c.j.p.ws.service.impl.UserServiceImpl    : ------User getAll() is accessed------
+2021-03-03 12:53:13.127 DEBUG 5846 --- [reactor-http-epoll-3] c.j.p.ws.service.impl.UserServiceImpl    : ------User getAll() is accessed------
+2021-03-03 12:53:13.818 DEBUG 5846 --- [reactor-http-epoll-3] c.j.p.ws.service.impl.UserServiceImpl    : ------User getAll() is accessed------
+2021-03-03 12:53:14.460 DEBUG 5846 --- [reactor-http-epoll-3] c.j.p.ws.service.impl.UserServiceImpl    : ------User getAll() is accessed------
+2021-03-03 12:53:15.382 DEBUG 5846 --- [reactor-http-epoll-3] c.j.p.ws.service.impl.UserServiceImpl    : ------User getAll() is accessed------
+2021-03-03 12:53:16.174 DEBUG 5846 --- [reactor-http-epoll-3] c.j.p.ws.service.impl.UserServiceImpl    : ------User getAll() is accessed------
+2021-03-03 12:53:17.289 DEBUG 5846 --- [reactor-http-epoll-3] c.j.p.ws.service.impl.UserServiceImpl    : ------User getAll() is accessed------
+2021-03-03 14:44:33.182  INFO 5846 --- [SpringContextShutdownHook] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:3, serverValue:37}] to localhost:27017 because the pool has been closed.
+2021-03-03 15:00:34.446  INFO 18052 --- [main] c.jhub.profile.service.UserServiceTest   : Starting UserServiceTest using Java 15.0.1 on LS-194 with PID 18052 (started by jahangir in /home/jahangir/spring_project/ms-profile-service-api)
+2021-03-03 15:00:34.447 DEBUG 18052 --- [main] c.jhub.profile.service.UserServiceTest   : Running with Spring Boot v2.4.2, Spring v5.3.3
+2021-03-03 15:00:34.449  INFO 18052 --- [main] c.jhub.profile.service.UserServiceTest   : No active profile set, falling back to default profiles: default
+2021-03-03 15:00:34.937  INFO 18052 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+2021-03-03 15:00:35.089  INFO 18052 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 148 ms. Found 1 Reactive MongoDB repository interfaces.
+2021-03-03 15:00:35.861  INFO 18052 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : note: noprealloc may hurt performance in many applications
+2021-03-03 15:00:35.863  INFO 18052 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T15:00:35.863+0900 I CONTROL  [initandlisten] MongoDB starting : pid=18140 port=40311 dbpath=/tmp/embedmongo-db-b1b774ad-28cd-4c82-81fc-5ffa45714962 64-bit host=LS-194
+2021-03-03 15:00:35.863  INFO 18052 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T15:00:35.863+0900 I CONTROL  [initandlisten] db version v3.5.5
+2021-03-03 15:00:35.863  INFO 18052 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T15:00:35.863+0900 I CONTROL  [initandlisten] git version: 98515c812b6fa893613f063dae568ff8319cbfbd
+2021-03-03 15:00:35.863  INFO 18052 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T15:00:35.863+0900 I CONTROL  [initandlisten] allocator: tcmalloc
+2021-03-03 15:00:35.863  INFO 18052 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T15:00:35.863+0900 I CONTROL  [initandlisten] modules: none
+2021-03-03 15:00:35.863  INFO 18052 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T15:00:35.863+0900 I CONTROL  [initandlisten] build environment:
+2021-03-03 15:00:35.863  INFO 18052 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T15:00:35.863+0900 I CONTROL  [initandlisten]     distarch: x86_64
+2021-03-03 15:00:35.863  INFO 18052 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T15:00:35.863+0900 I CONTROL  [initandlisten]     target_arch: x86_64
+2021-03-03 15:00:35.863  INFO 18052 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T15:00:35.863+0900 I CONTROL  [initandlisten] options: { net: { bindIp: "127.0.0.1", http: { enabled: false }, port: 40311 }, security: { authorization: "disabled" }, storage: { dbPath: "/tmp/embedmongo-db-b1b774ad-28cd-4c82-81fc-5ffa45714962", journal: { enabled: false }, mmapv1: { preallocDataFiles: false, smallFiles: true }, syncPeriodSecs: 0.0 } }
+2021-03-03 15:00:35.865  INFO 18052 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T15:00:35.865+0900 I STORAGE  [initandlisten] 
+2021-03-03 15:00:35.865  INFO 18052 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T15:00:35.865+0900 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2021-03-03 15:00:35.865  INFO 18052 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T15:00:35.865+0900 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+2021-03-03 15:00:35.865  INFO 18052 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T15:00:35.865+0900 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=7391M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),checkpoint=(wait=0,log_size=2GB),statistics_log=(wait=0),verbose=(recovery_progress),,log=(enabled=false),
+2021-03-03 15:00:35.956  INFO 18052 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T15:00:35.955+0900 W STORAGE  [initandlisten] Detected configuration for non-active storage engine mmapv1 when current storage engine is wiredTiger
+2021-03-03 15:00:35.956  INFO 18052 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T15:00:35.955+0900 I CONTROL  [initandlisten] 
+2021-03-03 15:00:35.956  INFO 18052 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T15:00:35.955+0900 I CONTROL  [initandlisten] ** NOTE: This is a development version (3.5.5) of MongoDB.
+2021-03-03 15:00:35.956  INFO 18052 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T15:00:35.955+0900 I CONTROL  [initandlisten] **       Not recommended for production.
+2021-03-03 15:00:35.956  INFO 18052 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T15:00:35.955+0900 I CONTROL  [initandlisten] 
+2021-03-03 15:00:35.956  INFO 18052 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T15:00:35.955+0900 I CONTROL  [initandlisten] 
+2021-03-03 15:00:35.956  INFO 18052 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T15:00:35.955+0900 I CONTROL  [initandlisten] ** WARNING: soft rlimits too low. rlimits set to 63035 processes, 1048576 files. Number of processes should be at least 524288 : 0.5 times number of files.
+2021-03-03 15:00:35.991  INFO 18052 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T15:00:35.991+0900 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/tmp/embedmongo-db-b1b774ad-28cd-4c82-81fc-5ffa45714962/diagnostic.data'
+2021-03-03 15:00:36.043  INFO 18052 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T15:00:36.043+0900 I INDEX    [initandlisten] build index on: admin.system.version properties: { v: 2, key: { version: 1 }, name: "incompatible_with_version_32", ns: "admin.system.version" }
+2021-03-03 15:00:36.044  INFO 18052 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T15:00:36.043+0900 I INDEX    [initandlisten] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2021-03-03 15:00:36.044  INFO 18052 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T15:00:36.044+0900 I INDEX    [initandlisten] build index done.  scanned 0 total records. 0 secs
+2021-03-03 15:00:36.044  INFO 18052 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T15:00:36.044+0900 I COMMAND  [initandlisten] setting featureCompatibilityVersion to 3.4
+2021-03-03 15:00:36.044  INFO 18052 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T15:00:36.044+0900 I NETWORK  [thread1] waiting for connections on port 40311
+2021-03-03 15:00:36.044  INFO 18052 --- [main] d.f.embed.mongo.MongodExecutable         : start de.flapdoodle.embed.mongo.config.MongodConfigBuilder$ImmutableMongodConfig@663bb8ef
+2021-03-03 15:00:36.335  INFO 18052 --- [main] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:40311], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-03-03 15:00:36.393  INFO 18052 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T15:00:36.393+0900 I NETWORK  [thread1] connection accepted from 127.0.0.1:53158 #1 (1 connection now open)
+2021-03-03 15:00:36.393  INFO 18052 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T15:00:36.393+0900 I NETWORK  [thread1] connection accepted from 127.0.0.1:53160 #2 (2 connections now open)
+2021-03-03 15:00:36.433  INFO 18052 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T15:00:36.433+0900 I NETWORK  [conn2] received client metadata from 127.0.0.1:53160 conn2: { driver: { name: "mongo-java-driver|reactive-streams|spring-boot", version: "4.1.1" }, os: { type: "Linux", name: "Linux", architecture: "amd64", version: "5.4.0-66-generic" }, platform: "Java/Oracle Corporation/15.0.1+9-18" }
+2021-03-03 15:00:36.434  INFO 18052 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T15:00:36.433+0900 I NETWORK  [conn1] received client metadata from 127.0.0.1:53158 conn1: { driver: { name: "mongo-java-driver|reactive-streams|spring-boot", version: "4.1.1" }, os: { type: "Linux", name: "Linux", architecture: "amd64", version: "5.4.0-66-generic" }, platform: "Java/Oracle Corporation/15.0.1+9-18" }
+2021-03-03 15:00:36.460  INFO 18052 --- [cluster-rtt-ClusterId{value='603f26047de1670fa8e43c39', description='null'}-localhost:40311] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:1}] to localhost:40311
+2021-03-03 15:00:36.460  INFO 18052 --- [cluster-ClusterId{value='603f26047de1670fa8e43c39', description='null'}-localhost:40311] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:2}] to localhost:40311
+2021-03-03 15:00:36.461  INFO 18052 --- [cluster-ClusterId{value='603f26047de1670fa8e43c39', description='null'}-localhost:40311] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:40311, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=5, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=null, roundTripTimeNanos=63705047}
+2021-03-03 15:00:36.766  WARN 18052 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+2021-03-03 15:00:36.916  INFO 18052 --- [main] c.jhub.profile.service.UserServiceTest   : Started UserServiceTest in 2.837 seconds (JVM running for 4.599)
+2021-03-03 15:00:37.550  INFO 18052 --- [main] c.jhub.profile.service.UserServiceTest   : -----Test 3: delete()------
+2021-03-03 15:00:37.619  INFO 18052 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T15:00:37.616+0900 I NETWORK  [thread1] connection accepted from 127.0.0.1:53164 #3 (3 connections now open)
+2021-03-03 15:00:37.628  INFO 18052 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T15:00:37.628+0900 I NETWORK  [conn3] received client metadata from 127.0.0.1:53164 conn3: { driver: { name: "mongo-java-driver|reactive-streams|spring-boot", version: "4.1.1" }, os: { type: "Linux", name: "Linux", architecture: "amd64", version: "5.4.0-66-generic" }, platform: "Java/Oracle Corporation/15.0.1+9-18" }
+2021-03-03 15:00:37.630  INFO 18052 --- [nioEventLoopGroup-2-3] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:3}] to localhost:40311
+2021-03-03 15:00:37.732  INFO 18052 --- [main] c.jhub.profile.service.UserServiceTest   : -----Test 4: update()------
+2021-03-03 15:00:37.752  INFO 18052 --- [main] c.jhub.profile.service.UserServiceTest   : -----Test 5: getById()------
+2021-03-03 15:00:37.761  INFO 18052 --- [main] c.jhub.profile.service.UserServiceTest   : -----Test 2: save()------
+2021-03-03 15:00:37.768  INFO 18052 --- [main] c.jhub.profile.service.UserServiceTest   : -----Test 1: getAll()------
+2021-03-03 15:00:37.772 DEBUG 18052 --- [main] c.j.p.ws.service.impl.UserServiceImpl    : ------User getAll() is accessed------
+2021-03-03 15:00:37.773  INFO 18052 --- [main] c.jhub.profile.service.UserServiceTest   : -------invoking StepVerifier------------------
+2021-03-03 15:00:37.776  INFO 18052 --- [main] ---userRepository.saveAll()----          : onSubscribe(FluxUsingWhen.UsingWhenConditionalSubscriber)
+2021-03-03 15:00:37.777  INFO 18052 --- [main] ---userRepository.saveAll()----          : request(unbounded)
+2021-03-03 15:00:37.780  INFO 18052 --- [nioEventLoopGroup-2-3] ---userRepository.saveAll()----          : onNext(com.jhub.profile.io.entity.User@2705f73)
+2021-03-03 15:00:37.780  INFO 18052 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T15:00:37.780+0900 I NETWORK  [thread1] connection accepted from 127.0.0.1:53166 #4 (4 connections now open)
+2021-03-03 15:00:37.780  INFO 18052 --- [nioEventLoopGroup-2-3] c.jhub.profile.service.UserServiceTest   : req.x----com.jhub.profile.io.entity.User@2705f73
+2021-03-03 15:00:37.781  INFO 18052 --- [nioEventLoopGroup-2-3] ---userRepository.saveAll()----          : onNext(com.jhub.profile.io.entity.User@3e6762af)
+2021-03-03 15:00:37.781  INFO 18052 --- [nioEventLoopGroup-2-3] c.jhub.profile.service.UserServiceTest   : req.x----com.jhub.profile.io.entity.User@3e6762af
+2021-03-03 15:00:37.787  INFO 18052 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T15:00:37.787+0900 I NETWORK  [conn4] received client metadata from 127.0.0.1:53166 conn4: { driver: { name: "mongo-java-driver|reactive-streams|spring-boot", version: "4.1.1" }, os: { type: "Linux", name: "Linux", architecture: "amd64", version: "5.4.0-66-generic" }, platform: "Java/Oracle Corporation/15.0.1+9-18" }
+2021-03-03 15:00:37.789  INFO 18052 --- [nioEventLoopGroup-2-4] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:4, serverValue:4}] to localhost:40311
+2021-03-03 15:00:37.793  INFO 18052 --- [nioEventLoopGroup-2-4] ---userRepository.saveAll()----          : onNext(com.jhub.profile.io.entity.User@654ba2c8)
+2021-03-03 15:00:37.793  INFO 18052 --- [nioEventLoopGroup-2-4] c.jhub.profile.service.UserServiceTest   : req.x----com.jhub.profile.io.entity.User@654ba2c8
+2021-03-03 15:00:37.794  INFO 18052 --- [nioEventLoopGroup-2-4] ---userRepository.saveAll()----          : onComplete()
+2021-03-03 15:00:37.807  INFO 18052 --- [nioEventLoopGroup-2-4] ---userRepository.saveAll()----          : onSubscribe(FluxUsingWhen.UsingWhenSubscriber)
+2021-03-03 15:00:37.807  INFO 18052 --- [nioEventLoopGroup-2-4] ---userRepository.saveAll()----          : request(unbounded)
+2021-03-03 15:00:37.812  INFO 18052 --- [nioEventLoopGroup-2-3] ---userRepository.saveAll()----          : onNext(com.jhub.profile.io.entity.User@654ba2c8)
+2021-03-03 15:00:37.812  INFO 18052 --- [nioEventLoopGroup-2-3] c.jhub.profile.service.UserServiceTest   : res.u----com.jhub.profile.dto.UserDto@7c66f78e
+2021-03-03 15:00:37.814  INFO 18052 --- [nioEventLoopGroup-2-3] ---userRepository.saveAll()----          : onNext(com.jhub.profile.io.entity.User@3e6762af)
+2021-03-03 15:00:37.814  INFO 18052 --- [nioEventLoopGroup-2-3] c.jhub.profile.service.UserServiceTest   : res.u----com.jhub.profile.dto.UserDto@7c66f78e
+2021-03-03 15:10:32.189  INFO 18052 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T15:10:32.189+0900 I CONTROL  [signalProcessingThread] got signal 15 (Terminated), will terminate after current cmd ends
+2021-03-03 15:10:32.190  INFO 18052 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T15:10:32.189+0900 I NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2021-03-03 15:10:32.190  INFO 18052 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T15:10:32.189+0900 I NETWORK  [signalProcessingThread] closing listening socket: 7
+2021-03-03 15:10:32.190  INFO 18052 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T15:10:32.189+0900 I NETWORK  [signalProcessingThread] closing listening socket: 8
+2021-03-03 15:10:32.190  INFO 18052 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T15:10:32.189+0900 I NETWORK  [signalProcessingThread] removing socket file: /tmp/mongodb-40311.sock
+2021-03-03 15:10:32.190  INFO 18052 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T15:10:32.189+0900 I NETWORK  [signalProcessingThread] shutdown: going to flush diaglog...
+2021-03-03 15:10:32.190  INFO 18052 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T15:10:32.189+0900 I FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2021-03-03 15:10:32.191  INFO 18052 --- [SpringContextShutdownHook] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:3, serverValue:3}] to localhost:40311 because the pool has been closed.
+2021-03-03 15:10:32.192  INFO 18052 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T15:10:32.191+0900 I STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2021-03-03 15:10:32.192  INFO 18052 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T15:10:32.192+0900 I -        [conn3] end connection 127.0.0.1:53164 (4 connections now open)
+2021-03-03 15:10:32.192  INFO 18052 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T15:10:32.192+0900 I -        [conn2] end connection 127.0.0.1:53160 (4 connections now open)
+2021-03-03 15:10:32.192  INFO 18052 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T15:10:32.192+0900 I -        [conn1] end connection 127.0.0.1:53158 (4 connections now open)
+2021-03-03 15:10:32.236  INFO 18052 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T15:10:32.236+0900 I STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2021-03-03 15:10:32.237  INFO 18052 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T15:10:32.236+0900 I CONTROL  [signalProcessingThread] now exiting
+2021-03-03 15:10:32.237  INFO 18052 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T15:10:32.236+0900 I CONTROL  [signalProcessingThread] shutting down with code:0
+2021-03-03 15:10:32.237  INFO 18052 --- [Thread-2] o.s.b.a.mongo.embedded.EmbeddedMongo     : 2021-03-03T15:10:32.236+0900 I CONTROL  [initandlisten] shutting down with code:0

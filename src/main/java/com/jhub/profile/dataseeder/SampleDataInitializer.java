@@ -30,17 +30,17 @@ public class SampleDataInitializer implements ApplicationListener<ApplicationRea
 		
 		log.info("--------------testing loging-----------------");
 		
-		userRepository
-			.deleteAll()
-			.thenMany(
-				Flux
-					.just("John","Tom","Snow", "William", "Tompson")
-					.map(name -> new  User(UUID.randomUUID().toString(), "Mr", name, name+"@example.com", LocalDateTime.now(), LocalDateTime.now(), LocalDateTime.now().minusMonths(5)))
-					.flatMap(userRepository::save)
-				
-			)
-			.thenMany(userRepository.findAll())
-			.subscribe(profile-> log.info("saving...."+ profile.toString()));
+//		userRepository
+//			.deleteAll()
+//			.thenMany(
+//				Flux
+//					.just("John","Tom","Snow", "William", "Tompson")
+//					.map(name -> new  User(UUID.randomUUID().toString(), "Mr", name, name+"@example.com", LocalDateTime.now(), LocalDateTime.now(), LocalDateTime.now().minusMonths(5)))
+//					.flatMap(userRepository::save)
+//				
+//			)
+//			.thenMany(userRepository.findAll())
+//			.subscribe(profile-> log.info("saving...."+ profile.toString()));
 		
 	}
 

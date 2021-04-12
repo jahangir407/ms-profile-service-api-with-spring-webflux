@@ -1,33 +1,21 @@
 package com.jhub.profile.io.entity;
 
-import java.time.LocalDateTime;
-import java.util.UUID;
 
-import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import com.googlecode.jmapper.annotations.JGlobalMap;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
 
 @JGlobalMap
 @Document
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
-public class User {
-
-	@Id
-	private String id = UUID.randomUUID().toString();
+@Getter
+@Setter
+public class User extends BaseEntity {
 
 	private String firstName;
 	private String lastName;
 	private String email;
-
-	private LocalDateTime createdAt;
-	private LocalDateTime updatedAt;
-	private LocalDateTime deletedAt;
 
 }

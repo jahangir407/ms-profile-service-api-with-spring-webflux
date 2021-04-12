@@ -1,9 +1,8 @@
 package com.jhub.profile.service;
 
 import java.time.LocalDateTime;
-import java.util.Arrays;
+import java.util.ArrayList;
 import java.util.List;
-import java.util.UUID;
 import java.util.function.Predicate;
 
 import org.junit.jupiter.api.Test;
@@ -46,15 +45,37 @@ public class UserServiceTest {
 
 		JMapper<UserDto, User> userToUserDtoMapper = new JMapper<UserDto, User>(UserDto.class, User.class);
 
-		List<User> users = Arrays.asList(
-				new User(UUID.randomUUID().toString(), "Mr", "X", "x@example.com", LocalDateTime.now(),
-						LocalDateTime.now(), LocalDateTime.now()),
-				new User(UUID.randomUUID().toString(), "Mr", "Y", "y@example.com", LocalDateTime.now(),
-						LocalDateTime.now(), LocalDateTime.now()),
-				new User(UUID.randomUUID().toString(), "Mr", "Z", "z@example.com", LocalDateTime.now(),
-						LocalDateTime.now(), LocalDateTime.now())
+		List<User> users = new ArrayList<>();
+		User user1 = new User();
+		user1.setId(null);
+		user1.setCreatedAt(LocalDateTime.now());
+		user1.setDeletedAt(null);
+		user1.setEmail("x@example.com");
+		user1.setFirstName("Mr");
+		user1.setLastName("X");
+		user1.setUpdatedAt(LocalDateTime.now());
 
-		);
+		User user2 = new User();
+		user2.setId(null);
+		user2.setCreatedAt(LocalDateTime.now());
+		user2.setDeletedAt(null);
+		user2.setEmail("y@example.com");
+		user2.setFirstName("Mr");
+		user2.setLastName("Y");
+		user2.setUpdatedAt(LocalDateTime.now());
+
+		User user3 = new User();
+		user3.setId(null);
+		user3.setCreatedAt(LocalDateTime.now());
+		user3.setDeletedAt(null);
+		user3.setEmail("z@example.com");
+		user3.setFirstName("Mr");
+		user3.setLastName("Z");
+		user3.setUpdatedAt(LocalDateTime.now());
+
+		users.add(user1);
+		users.add(user2);
+		users.add(user3);
 
 		Flux<User> saved = userRepository.saveAll(Flux.fromIterable(users)).log("---userRepository.saveAll()----");
 
@@ -79,8 +100,15 @@ public class UserServiceTest {
 
 		log.info("-----Test 2: save()------");
 
-		UserDto user = new UserDto(UUID.randomUUID().toString(), "Mr", "Snow", "z@example.com", LocalDateTime.now(),
-				LocalDateTime.now(), LocalDateTime.now());
+		UserDto user = new UserDto();
+		user.setId(null);
+		user.setCreatedAt(LocalDateTime.now());
+		user.setDeletedAt(null);
+		user.setEmail("snow@example.com");
+		user.setFirstName("Mr");
+		user.setLastName("Snow");
+		user.setUpdatedAt(LocalDateTime.now());
+
 		Mono<UserDto> savedUser = userService.createUser(user);
 
 		StepVerifier.create(savedUser).expectNextMatches(s -> s.getId().equals(user.getId())).verifyComplete();
@@ -91,8 +119,15 @@ public class UserServiceTest {
 
 		log.info("-----Test 3: delete()------");
 
-		UserDto user = new UserDto(UUID.randomUUID().toString(), "John", "Wick", "wick@example.com",
-				LocalDateTime.now(), LocalDateTime.now(), LocalDateTime.now());
+		UserDto user = new UserDto();
+		user.setId(null);
+		user.setCreatedAt(LocalDateTime.now());
+		user.setDeletedAt(null);
+		user.setEmail("wick@example.com");
+		user.setFirstName("Mr");
+		user.setLastName("Wick");
+		user.setUpdatedAt(LocalDateTime.now());
+
 		Mono<UserDto> deletedUser = this.userService.createUser(user)
 				.flatMap(u -> this.userService.deleteUserById(u.getId()));
 		StepVerifier.create(deletedUser).expectNextMatches(r -> r.getId().equals(user.getId())).verifyComplete();
@@ -104,12 +139,18 @@ public class UserServiceTest {
 
 		log.info("-----Test 4: update()------");
 
-		UserDto user = new UserDto(UUID.randomUUID().toString(), "Alexandra", "Daddario", "alexandra@example.com",
-				LocalDateTime.now(), LocalDateTime.now(), LocalDateTime.now());
+		UserDto user = new UserDto();
+		user.setId(null);
+		user.setCreatedAt(LocalDateTime.now());
+		user.setDeletedAt(null);
+		user.setEmail("alexandra@example.com");
+		user.setFirstName("Alexandra");
+		user.setLastName("Daddario");
+		user.setUpdatedAt(LocalDateTime.now());
 
 		Mono<UserDto> updatedUser = this.userService.createUser(user).flatMap(res -> {
 			res.setEmail("daddario@example.com");
-			return this.userService.updateUserById(res.getId(),res);
+			return this.userService.updateUserById(res.getId(), res);
 		});
 
 		StepVerifier.create(updatedUser).expectNextMatches(res -> res.getEmail().equals("daddario@example.com"))
@@ -119,11 +160,17 @@ public class UserServiceTest {
 
 	@Test
 	public void getById() {
-		
+
 		log.info("-----Test 5: getById()------");
 
-		UserDto user = new UserDto(UUID.randomUUID().toString(), "Emma", "Stone", "emma@example.com",
-				LocalDateTime.now(), LocalDateTime.now(), LocalDateTime.now());
+		UserDto user = new UserDto();
+		user.setId(null);
+		user.setCreatedAt(LocalDateTime.now());
+		user.setDeletedAt(null);
+		user.setEmail("emma@example.com");
+		user.setFirstName("Emma");
+		user.setLastName("Stone");
+		user.setUpdatedAt(LocalDateTime.now());
 
 		Mono<UserDto> retrivedUser = this.userService.createUser(user)
 				.thenMany(this.userService.getUserbyId(user.getId())).next();
